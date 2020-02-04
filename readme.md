@@ -45,5 +45,7 @@ https://trello.com/b/fc0ajCZ8
 
 **Wire Frames**
 
-<img src="/Users/mekaalahmad/ga-sei/PROJECT-ONE/Wireframes/Web 1920 – 1.png" alt = "Wireframe of main screen">
-<img src="/Users/mekaalahmad/ga-sei/PROJECT-ONE/Wireframes/Web 1920 – 2.png" alt = "Wireframe of question screen">
+<img src="Wireframes/Web 1920 – 1.png" alt = "Wireframe of main screen">
+<img src="Wireframes/Web 1920 – 2.png" alt = "Wireframe of question screen">
+
+
