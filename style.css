@@ -1,0 +1,47 @@
+body {
+    background-color: linen;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+header {
+    grid-row: 1;
+    grid-column: 1 / span 5;
+    margin: auto;
+  }
+
+main.Nintendo {
+    grid-row: 2;
+    grid-column: 1;
+}
+main.Photography {
+    grid-row: 2;
+    grid-column: 2;
+}
+main.Food {
+    grid-row: 2;
+    grid-column: 3;
+}
+main.World {
+    grid-row: 2;
+    grid-column: 4;
+}
+main.Astronomy {
+    grid-row: 2;
+    grid-column: 5;
+}
+main button {
+    display: block;
+    margin: 20px auto;
+    width: 240px;
+    height: 160px;
+}
+footer {
+    grid-row: 3;
+    grid-column: 1 / span 5;
+}
+footer button {
+    display: inline-block;
+}
