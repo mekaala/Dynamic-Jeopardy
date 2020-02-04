@@ -41,10 +41,9 @@ A "grade". Compare the total points earned with the total points they could have
 
 **User Stories**
 
-Use Trello to prioritize your User Stories / features. Focus on what is most important / critical to success.
-
+https://trello.com/b/fc0ajCZ8
 
 **Wire Frames**
 
-Draft up a set of sketches to start from as you begin to design your app's front end. These sketches should be lightweight and rough so that you can easily iterate on them if you decide to add or remove features.
-
+<img src="/Users/mekaalahmad/ga-sei/PROJECT-ONE/Wireframes/Web 1920 – 1.png" alt = "Wireframe of main screen">
+<img src="/Users/mekaalahmad/ga-sei/PROJECT-ONE/Wireframes/Web 1920 – 2.png" alt = "Wireframe of question screen">
