@@ -1,19 +1,31 @@
-// Selected for each individual button by query selecting for both their class and id.
-
-// To make the questions, I will need a prompt that asks a question
-// and an empty text box that asks for an answer.
-// If the input is the same as the answer variable, then the answer is correct,
-// and the accrued points will add to the total.
-// Else: the player gets no points, and will return to the screen.
-
-let scoreTotal = 0;
+// Scoreboard:
+// Created values for each prompt depending on their difficulty.
+// Created a total score that increases ONLY when player gives correct answer to questions.
 let score100 = 100;
 let score200 = 200;
 let score300 = 300;
 let score400 = 400;
 let score500 = 500;
+let scoreTotal = 0;
 let sum = 0;
 
+// Make an alert that shows the total score of the player.
+scoreBoard = document.querySelector("#score");
+scoreBoard.addEventListener('click',scoreBoardPrompt);
+function scoreBoardPrompt() {
+    alert("Your total score is: " + scoreTotal + " out of " + sum + "!")
+}
+
+// Maybe later, I can try to update the content of the score text in the footer to display the total score.
+
+// Selected for each individual button by query selecting for both their class and id.
+// To make the questions, I will need a prompt that asks a question
+// and an empty text box that asks for an answer.
+// If the input is the same as the answer variable, then the answer is correct,
+// and the accrued points will add to the total.
+// Else: the player gets no points, and will return to the screen.
+// I need to also "lock" buttons after they have been answered.
+    // After each question prompt function, disable the button with "button_name:disabled = true";
 
 const mario100 = document.querySelector(".Mario > #first");
 const mario200 = document.querySelector(".Mario > #second");
@@ -32,6 +44,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
             alert("Really? You couldn't get the 100 point question right?")
             mario100.classList.add('wrong');
         } sum += score100;
+        mario100.disabled = true;
     }
 
     mario200.addEventListener('click', superMario200);
@@ -45,6 +58,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
             alert("Sorry, this one's a little tougher.");
             mario200.classList.add('wrong');
         } sum += score200;
+        mario200.disabled = true;
     }
 
     mario300.addEventListener('click', superMario300);
@@ -58,6 +72,8 @@ const mario500 = document.querySelector(".Mario > #fifth");
             alert("Sorry, it's wrong.");
             mario300.classList.add('wrong');
         } sum += score300;
+        mario300.disabled = true;
+
     }
 
     mario400.addEventListener('click', superMario400);
@@ -71,6 +87,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
             alert("Sorry, it's wrong.");
             mario400.classList.add('wrong');
         } sum += score400;
+        mario400.disabled = true;
     }
 
     mario500.addEventListener('click', superMario500);
@@ -84,6 +101,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
             alert("Yeah... I wouldn't blame you for getting this one wrong...");
             mario500.classList.add('wrong');
         } sum += score500;
+        mario500.disabled = true;
     }
 
 const zelda100 = document.querySelector(".Zelda > #first");
@@ -103,6 +121,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
             alert("Really? You couldn't get the 100 point question right?");
             zelda100.classList.add('wrong');
         } sum += score100;
+        zelda100.disabled = true;
     }
 
     zelda200.addEventListener('click', loz200);
@@ -116,6 +135,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
             alert("Sorry, this one's a little tougher.");
             zelda200.classList.add('wrong');
         } sum += score200;
+        zelda200.disabled = true;
     }
 
     zelda300.addEventListener('click', loz300);
@@ -129,6 +149,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
             alert("Sorry, it's wrong.");
             zelda300.classList.add('wrong');
         } sum += score300;
+        zelda300.disabled = true;
     }
 
     zelda400.addEventListener('click', loz400);
@@ -142,6 +163,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
             alert("Sorry, it's wrong.");
             zelda400.classList.add('wrong');
         } sum += score400;
+        zelda400.disabled = true;
     }
 
     zelda500.addEventListener('click', loz500);
@@ -155,6 +177,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
             alert("Yeah... I wouldn't blame you for getting this one wrong...");
             zelda500.classList.add('wrong');
         } sum += score500;
+        zelda500.disabled = true;
     }
 
 const pokemon100 = document.querySelector(".Pokemon > #first");
@@ -174,6 +197,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
             alert("Really? You couldn't get the 100 point question right?");
             pokemon100.classList.add('wrong');
         } sum += score100;
+        pokemon100.disabled = true;
     }
 
     pokemon200.addEventListener('click', poke200);
@@ -187,6 +211,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
             alert("Sorry, this one's a little tougher.");
             pokemon200.classList.add('wrong');
         } sum += score200;
+        pokemon200.disabled = true;
     }
 
     pokemon300.addEventListener('click', poke300);
@@ -200,6 +225,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
             alert("Sorry, it's wrong.");
             pokemon300.classList.add('wrong');
         } sum += score300;
+        pokemon300.disabled = true;
     }
 
     pokemon400.addEventListener('click', poke400);
@@ -213,6 +239,8 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
             alert("Sorry, it's wrong.");
             pokemon400.classList.add('wrong');
         } sum += score400;
+        pokemon400.disabled = true;
+
     }
 
     pokemon500.addEventListener('click', poke500);
@@ -226,6 +254,8 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
             alert("Yeah... I wouldn't blame you for getting this one wrong...");
             pokemon500.classList.add('wrong');
         } sum += score500;
+        pokemon500.disabled = true;
+
     }
 
 const smash100 = document.querySelector(".Smash > #first");
@@ -245,6 +275,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
             alert("Really? You couldn't get the 100 point question right?");
             smash100.classList.add('wrong');
         } sum += score100;
+        smash100.disabled = true;
     }
 
     smash200.addEventListener('click', smashBros200);
@@ -258,6 +289,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
             alert("Sorry, this one's a little tougher.");
             smash200.classList.add('wrong');
         } sum += score200;
+        smash200.disabled = true;
     }
 
     smash300.addEventListener('click', smashBros300);
@@ -271,6 +303,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
             alert("Sorry, it's wrong.");
             smash300.classList.add('wrong');
         } sum += score300;
+        smash300.disabled = true;
     }
 
     smash400.addEventListener('click', smashBros400);
@@ -284,6 +317,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
             alert("Sorry, it's wrong.");
             smash400.classList.add('wrong');
         } sum += score400;
+        smash400.disabled = true;
     }
 
     smash500.addEventListener('click', smashBros500);
@@ -297,6 +331,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
             alert("Yeah... I wouldn't blame you for getting this one wrong...");
             smash500.classList.add('wrong');
         } sum += score500;
+        smash500.disabled = true;
     }
 
 const mat100 = document.querySelector(".Mature > #first");
@@ -316,6 +351,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
             alert("Really? You couldn't get the 100 point question right?");
             mat100.classList.add('wrong');
         } sum += score100;
+        mat100.disabled = true;
     }
 
     mat200.addEventListener('click', mature200);
@@ -329,6 +365,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
             alert("Sorry, this one's a little tougher.");
             mat200.classList.add('wrong');
         } sum += score200;
+        mat200.disabled = true;
     }
 
     mat300.addEventListener('click', mature300);
@@ -342,6 +379,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
             alert("Sorry, it's wrong.");
             mat300.classList.add('wrong');
         } sum += score300;
+        mat300.disabled = true;
     }
 
     mat400.addEventListener('click', mature400);
@@ -355,6 +393,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
             alert("Sorry, it's wrong.");
             mat400.classList.add('wrong');
         } sum += score400;
+        mat400.disabled = true;
     }
 
     mat500.addEventListener('click', mature500);
@@ -368,15 +407,5 @@ const mat500 = document.querySelector(".Mature > #fifth");
             alert("Yeah... I wouldn't blame you for getting this one wrong...");
             mat500.classList.add('wrong');
         } sum += score500;
+        mat500.disabled = true;
     }
-
-
-
-// Scoreboard prompt
-// Make an alert that shows the total score of the player.
-scoreBoard = document.querySelector("#score");
-scoreBoard.addEventListener('click',scoreBoardPrompt);
-function scoreBoardPrompt() {
-    alert("Your total score is: " + scoreTotal + " out of " + sum + "!")
-}
-
