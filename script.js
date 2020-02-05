@@ -113,7 +113,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
     zelda100.addEventListener('click', loz100);
     function loz100() {
         let quiz = prompt("Where is the main setting of the Zelda series?");
-        if (quiz.toUpperCase() == "HYRULE") {
+        if (quiz.toUpperCase() == "HYRULE" || quiz.toUpperCase() == "HYRULE KINGDOM") {
             alert("Good job! You have earned 100 points.");
             scoreTotal += score100;
             zelda100.classList.add('answer');
@@ -126,8 +126,8 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
 
     zelda200.addEventListener('click', loz200);
     function loz200() {
-        let quiz = prompt("");
-        if (quiz.toUpperCase() == "") {
+        let quiz = prompt("What is the sword that Link uses to vanquish evil?");
+        if (quiz.toUpperCase() == "MASTER SWORD") {
             alert("Great job! You have earned 200 points.");
             scoreTotal += score200;
             zelda200.classList.add('answer');
@@ -140,8 +140,8 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
 
     zelda300.addEventListener('click', loz300);
     function loz300() {
-        let quiz = prompt("");
-        if (quiz.toUpperCase() == "") {
+        let quiz = prompt("In Breath of the Wild, what are the mechanical giants that roam the land of Hyrule?");
+        if (quiz.toUpperCase() == "DIVINE BEASTS" || quiz.toUpperCase() == "DIVINE BEAST" ) {
             alert("Nice! 300 points!");
             scoreTotal += score300;
             zelda300.classList.add('answer');
@@ -154,8 +154,8 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
 
     zelda400.addEventListener('click', loz400);
     function loz400() {
-        let quiz = prompt(".");
-        if (quiz.toUpperCase() == "") {
+        let quiz = prompt("Who is responsible for plunging the world into twilight");
+        if (quiz.toUpperCase() == "ZANT" || quiz.toUpperCase() == "GANONDORF") {
             alert("Wow! 400 points!");
             scoreTotal += score400;
             zelda400.classList.add('answer');
@@ -168,8 +168,8 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
 
     zelda500.addEventListener('click', loz500);
     function loz500() {
-        let quiz = prompt("");
-        if (quiz.toUpperCase() == "") {
+        let quiz = prompt("In Majora's Mask, this melody creates a stone statue of Link.");
+        if (quiz.toUpperCase() == "ELEGY OF EMPTINESS") {
             alert("NO WAY! You got it right! 500 points!");
             scoreTotal += score500;
             zelda500.classList.add('answer');
