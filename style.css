@@ -5,6 +5,7 @@ body {
     grid-template-columns: 20% 20% 20% 20% 20%;
     font-family: 'Nunito', sans-serif;
     text-align: center;
+    font-weight: lighter;
 }
 header {
     grid-row: 1;
@@ -37,6 +38,23 @@ main button {
     margin: 20px auto;
     width: 240px;
     height: 160px;
+    font-size: larger;
+    font-weight: lighter;
+}
+#first {
+    background-color: #2F8CAB;
+}
+#second {
+
+}
+#third {
+
+}
+#fourth {
+
+}
+#fifth {
+
 }
 footer {
     grid-row: 3;
