@@ -43,9 +43,11 @@ main button {
 }
 .answer {
     background-color: #2F8CAB;
+    color: white;
 }
 .wrong {
     background-color: #FE4902;
+    color: white;
 }
 footer {
     grid-row: 3;
