@@ -17,19 +17,19 @@ main.Nintendo {
     grid-row: 2;
     grid-column: 1;
 }
-main.Photography {
+main.Zelda {
     grid-row: 2;
     grid-column: 2;
 }
-main.Food {
+main.Pokemon {
     grid-row: 2;
     grid-column: 3;
 }
-main.World {
+main.Smash {
     grid-row: 2;
     grid-column: 4;
 }
-main.Astronomy {
+main.Mature {
     grid-row: 2;
     grid-column: 5;
 }
@@ -41,25 +41,16 @@ main button {
     font-size: larger;
     font-weight: lighter;
 }
-#first {
+.answer {
     background-color: #2F8CAB;
 }
-#second {
-
-}
-#third {
-
-}
-#fourth {
-
-}
-#fifth {
-
+.wrong {
+    background-color: #FE4902;
 }
 footer {
     grid-row: 3;
     grid-column: 1 / span 5;
 }
-footer button {
+footer nav {
     display: inline-block;
 }
