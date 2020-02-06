@@ -63,7 +63,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
 
     mario300.addEventListener('click', superMario300);
     function superMario300() {
-        let quiz = prompt("This princess wears yellow and rules Sarasaraland");
+        let quiz = prompt("This princess wears yellow and rules Sarasaraland.");
         if (quiz.toUpperCase() == "DAISY" || quiz.toUpperCase() == "DAISY") {
             alert("Nice! 300 points!");
             scoreTotal += score300;
@@ -112,7 +112,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
 
     zelda100.addEventListener('click', loz100);
     function loz100() {
-        let quiz = prompt("Where is the main setting of the Zelda series?");
+        let quiz = prompt("The main setting of the Zelda series.");
         if (quiz.toUpperCase() == "HYRULE" || quiz.toUpperCase() == "HYRULE KINGDOM") {
             alert("Good job! You have earned 100 points.");
             scoreTotal += score100;
@@ -126,7 +126,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
 
     zelda200.addEventListener('click', loz200);
     function loz200() {
-        let quiz = prompt("What is the sword that Link uses to vanquish evil?");
+        let quiz = prompt("The blade of evil's bane wielded only by Link.");
         if (quiz.toUpperCase() == "MASTER SWORD") {
             alert("Great job! You have earned 200 points.");
             scoreTotal += score200;
@@ -140,7 +140,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
 
     zelda300.addEventListener('click', loz300);
     function loz300() {
-        let quiz = prompt("In Breath of the Wild, what are the mechanical giants that roam the land of Hyrule?");
+        let quiz = prompt("In Breath of the Wild, these mechanical giants roam the land of Hyrule.");
         if (quiz.toUpperCase() == "DIVINE BEASTS" || quiz.toUpperCase() == "DIVINE BEAST" ) {
             alert("Nice! 300 points!");
             scoreTotal += score300;
@@ -154,7 +154,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
 
     zelda400.addEventListener('click', loz400);
     function loz400() {
-        let quiz = prompt("Who is responsible for plunging the world into twilight?");
+        let quiz = prompt("In Twilight Princess, this evil figure plunges Hyrule into eternal Twilight.");
         if (quiz.toUpperCase() == "ZANT" || quiz.toUpperCase() == "GANONDORF") {
             alert("Wow! 400 points!");
             scoreTotal += score400;
@@ -202,7 +202,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
 
     pokemon200.addEventListener('click', poke200);
     function poke200() {
-        let quiz = prompt("This is the very first town you start your Pokémon adventure.");
+        let quiz = prompt("The very first town you start your Pokémon adventure.");
         if (quiz.toUpperCase() == "PALLET" || quiz.toUpperCase() == "PALLET TOWN" ) {
             alert("Great job! You have earned 200 points.");
             scoreTotal += score200;
@@ -216,7 +216,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
 
     pokemon300.addEventListener('click', poke300);
     function poke300() {
-        let quiz = prompt("This malicious individual is the boss of the evil Team Rocket.");
+        let quiz = prompt("The boss of the evil Team Rocket.");
         if (quiz.toUpperCase() == "GIOVANNI") {
             alert("Nice! 300 points!");
             scoreTotal += score300;
@@ -230,7 +230,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
 
     pokemon400.addEventListener('click', poke400);
     function poke400() {
-        let quiz = prompt("This legendary Electric type Pokémon is known to lend its power to one who wish to build an ideal world.");
+        let quiz = prompt("This legendary Pokémon sworn to lend its power to one who wishes to build an ideal world.");
         if (quiz.toUpperCase() == "ZEKROM") {
             alert("Wow! 400 points!");
             scoreTotal += score400;
@@ -245,7 +245,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
 
     pokemon500.addEventListener('click', poke500);
     function poke500() {
-        let quiz = prompt("Before Pikachu was decided, another Pokémon was going to the main mascot of the series.");
+        let quiz = prompt("Before Pikachu was decided, this other Pokémon was going to the main mascot of the series.");
         if (quiz.toUpperCase() == "CLEFAIRY") {
             alert("NO WAY! You got it right! 500 points!");
             scoreTotal += score500;
@@ -266,8 +266,8 @@ const smash500 = document.querySelector(".Smash > #fifth");
 
     smash100.addEventListener('click', smashBros100);
     function smashBros100() {
-        let quiz = prompt(".");
-        if (quiz.toUpperCase() == "") {
+        let quiz = prompt("This fighter shows his moves with his legendary Falcon Punch.");
+        if (quiz.toUpperCase() == "CAPTAIN FALCON") {
             alert("Good job! You have earned 100 points.");
             scoreTotal += score100;
             smash100.classList.add('answer');
@@ -280,8 +280,8 @@ const smash500 = document.querySelector(".Smash > #fifth");
 
     smash200.addEventListener('click', smashBros200);
     function smashBros200() {
-        let quiz = prompt(".");
-        if (quiz.toUpperCase() == "") {
+        let quiz = prompt("Since Super Smash Bros. Melee, characters send a Sandbag flying in this mode");
+        if (quiz.toUpperCase() == "HOME RUN CONTEST" || quiz.toUpperCase() == "HRC") {
             alert("Great job! You have earned 200 points.");
             scoreTotal += score200;
             smash200.classList.add('answer');
@@ -294,8 +294,8 @@ const smash500 = document.querySelector(".Smash > #fifth");
 
     smash300.addEventListener('click', smashBros300);
     function smashBros300() {
-        let quiz = prompt("Before he worked on the Super Smash Bros. series, Masahiro Sakurai at 19 created this adorable character.");
-        if (quiz.toUpperCase() == "KIRBY") {
+        let quiz = prompt("This random mechanic in Super Smash Bros. Brawl upset many competitive players.");
+        if (quiz.toUpperCase() == "TRIPPING") {
             alert("Nice! 300 points!");
             scoreTotal += score300;
             smash300.classList.add('answer');
@@ -308,8 +308,8 @@ const smash500 = document.querySelector(".Smash > #fifth");
 
     smash400.addEventListener('click', smashBros400);
     function smashBros400() {
-        let quiz = prompt(".");
-        if (quiz.toUpperCase() == "") {
+        let quiz = prompt("Including DLC, this newcomer was the last addition to Super Smash Bros. for Nintendo 3DS and Wii U.");
+        if (quiz.toUpperCase() == "BAYONETTA") {
             alert("Wow! 400 points!");
             scoreTotal += score400;
             smash400.classList.add('answer');
@@ -322,8 +322,8 @@ const smash500 = document.querySelector(".Smash > #fifth");
 
     smash500.addEventListener('click', smashBros500);
     function smashBros500() {
-        let quiz = prompt("") 
-        if (quiz.toUpperCase() == "") {
+        let quiz = prompt("In the World of Darkness, this boss lacks a concentrated weak spot.") 
+        if (quiz.toUpperCase() == "MARX") {
             alert("NO WAY! You got it right! 500 points!");
             scoreTotal += score500;
             smash500.classList.add('answer');
@@ -342,7 +342,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
 
     mat100.addEventListener('click', mature100);
     function mature100() {
-        let quiz = prompt("Who was the very first main character of the Fire Emblem series?");
+        let quiz = prompt("The very first Lord of the Fire Emblem series.");
         if (quiz.toUpperCase() == "MARTH") {
             alert("Good job! You have earned 100 points.");
             scoreTotal += score100;
@@ -356,8 +356,8 @@ const mat500 = document.querySelector(".Mature > #fifth");
 
     mat200.addEventListener('click', mature200);
     function mature200() {
-        let quiz = prompt(".");
-        if (quiz.toUpperCase() == "") {
+        let quiz = prompt("This sequel became a Nintendo exclusive when the company funded its developer.");
+        if (quiz.toUpperCase() == "BAYONETTA 2") {
             alert("Great job! You have earned 200 points.");
             scoreTotal += score200;
             mat200.classList.add('answer');
@@ -370,8 +370,8 @@ const mat500 = document.querySelector(".Mature > #fifth");
 
     mat300.addEventListener('click', mature300);
     function mature300() {
-        let quiz = prompt(".");
-        if (quiz.toUpperCase() == "") {
+        let quiz = prompt("Before publishing The Legend of Zelda: Breath of the Wild in 2017, what open world game did Nintendo publish in 2015?");
+        if (quiz.toUpperCase() == "XENOBLADE CHRONICLES X" || quiz.toUpperCase() == "XENOBLADE X" || quiz.toUpperCase() == "XENOBLADEX") {
             alert("Nice! 300 points!");
             scoreTotal += score300;
             mat300.classList.add('answer');
@@ -384,7 +384,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
 
     mat400.addEventListener('click', mature400);
     function mature400() {
-        let quiz = prompt(".");
+        let quiz = prompt("");
         if (quiz.toUpperCase() == "") {
             alert("Wow! 400 points!");
             scoreTotal += score400;
@@ -398,8 +398,8 @@ const mat500 = document.querySelector(".Mature > #fifth");
 
     mat500.addEventListener('click', mature500);
     function mature500() {
-        let quiz = prompt("Before publishing The Legend of Zelda: Breath of the Wild in 2017, what open world game did Nintendo publish in 2015?"); 
-        if (quiz.toUpperCase() == "XENOBLADE CHRONICLES X" || quiz.toUpperCase() == "XENOBLADE X" || quiz.toUpperCase() == "XENOBLADEX") {
+        let quiz = prompt(""); 
+        if (quiz.toUpperCase() == "") {
             alert("NO WAY! You got it right! 500 points!");
             scoreTotal += score500;
             mat500.classList.add('answer');
@@ -409,3 +409,8 @@ const mat500 = document.querySelector(".Mature > #fifth");
         } sum += score500;
         mat500.disabled = true;
     }
+
+
+// BONUS
+// Make another board with double values on HTML, CSS, JavaScript, Git, and Outcomes.
+// Give players bonus points for being precise with their answers.
