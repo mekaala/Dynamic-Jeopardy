@@ -422,7 +422,3 @@ function finalScore() {
 const gameOver = new Audio('sounds/Game-over effect.mp3');
 const niceWork = new Audio('sounds/nice_work.mp3');
 const incredible = new Audio('sounds/incredible.mp3');
-
-
-// QoL
-// Create a mouseover event that changes the color of each button.
