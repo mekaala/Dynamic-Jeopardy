@@ -14,8 +14,8 @@ header {
     font-size: 90%;
   }
   h1 {
-      margin: auto;
-      display: inline;
+      margin-top: 45px;
+      
   }
   h2 {
     float: left;
