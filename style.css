@@ -85,6 +85,7 @@ section.final {
 #last h1 {
     font-weight: lighter;
     font-family: 'Raleway', sans-serif;
+    margin: auto;
 }
 #score {
     display: block;
@@ -101,8 +102,13 @@ footer {
     grid-row: 4;
     grid-column: 1 / span 5;
 }
+p {
+    float: left;
+    margin: auto; 
+}
 footer nav {
-    display: inline-block;
+    float: right;
+    margin: auto;
 }
 
 .answer {
@@ -135,31 +141,30 @@ button:hover {
     transition-duration: 1s;
 }
 
-@media (max-width: 800px) {
+@media only screen and (max-width: 768px) {
     body {
-        background-color: linen;
-        color: black;
-        display: grid;
-        grid-template-rows: 90px 1fr 100px 50px;
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        font-family: 'Raleway', sans-serif;
-        text-align: center;
-        font-weight: lighter;
-    }
-    header {
-        font-size: 60%;
-      }
+    background-color: linen;
+    color: black;
+    display: grid;
+    grid-template-rows: 60px 1fr 100px 50px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+}
       h1 {
-          margin: auto;
+          margin-top: 30px;
           display: block;
+          font-size: 120%;
       }
       h2 {
         float: left;
-        margin: auto;
+        margin-top: 3px;
+        font-size: 90%;
       }
         nav {
             float: right;
-            margin: 5px auto;        
+            font-size: 80%;    
         }
             a:hover {
                 color: #2F8CAB;
@@ -171,5 +176,29 @@ button:hover {
             }
     main h3 {
         font-size: 75%;
+    }
+    main button {
+        width: 90%;
+        height: 60px;
+        font-size: 90%;
+        font-weight: lighter;
+        border-radius: 12px;
+    }
+    #last {
+        width: 100%;
+        height: 60px;
+        border-radius: 24px;
+        transition-duration: 0.4s;
+        background-color: rgb(235, 233, 233);
+    }
+    #last h1 {
+        font-weight: lighter;
+        font-family: 'Raleway', sans-serif;
+    }
+    #score {
+        margin-bottom: 20px;
+        height: 60px;
+        font-weight: lighter;
+        border-radius: 12px;
     }
 }
