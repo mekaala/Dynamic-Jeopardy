@@ -1,15 +1,17 @@
 body {
-    background-color: linen;
+    background-color :linen;
+    color: black;
     display: grid;
     grid-template-rows: 90px 1fr 100px 50px;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     font-weight: lighter;
 }
 header {
     grid-row: 1;
     grid-column: 1 / span 5;
+    font-size: 90%;
   }
   h1 {
       margin: auto;
@@ -63,6 +65,10 @@ main button {
     font-size: larger;
     font-weight: lighter;
     border-radius: 24px;
+    font-family: 'Raleway', sans-serif;}
+button:hover {
+    background-color: silver;
+    color: black;
 }
 section.final {
     grid-row: 3;
@@ -76,10 +82,17 @@ section.final {
     height: 100px;
     border-radius: 24px;
 }
+#last h1 {
+    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
+}
 button#score {
     display: block;
     margin: 20px auto;
+    width: 30%;
+    height: 50px;
     font-weight: lighter;
+    border-radius: 24px;
 }
 .answer {
     background-color: #2F8CAB;
@@ -88,9 +101,6 @@ button#score {
 .wrong {
     background-color: #FE4902;
     color: white;
-}
-button:hover {
-    background-color: silver;
 }
 footer {
     grid-row: 4;

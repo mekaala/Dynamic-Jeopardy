@@ -6,7 +6,7 @@ let score200 = 200;
 let score300 = 300;
 let score400 = 400;
 let score500 = 500;
-let scoreFinal = 2500;
+let scoreFinal = 1000;
 let scoreTotal = 0;
 let sum = 0;
 
@@ -382,7 +382,7 @@ finalQuestion.addEventListener('click',lastFight);
 function lastFight() {
     let quiz = prompt("This game was the very first Nintendo published 'M rated' game."); 
         if (quiz.toUpperCase() == "ETERNAL DARKNESS" || quiz.toUpperCase() == "ETERNAL DARKNESS: SANITY'S REQUIEM") {
-            alert("NO WAY! You got it right! 2500 points!");
+            alert("NO WAY! You got it right! 1000 points!");
             scoreTotal += scoreFinal;
             finalQuestion.classList.add('answer');
         } else {
@@ -403,13 +403,13 @@ function finalScore() {
     if (confirm("Are you sure you want to submit your score?")) {
         if (scoreTotal < 2000) {
             gameOver.play();
-            alert("GAME OVER\n" + scoreTotal + "/7500");
+            alert("GAME OVER\n" + scoreTotal + " Points");
         } else if (scoreTotal < 6000) {
             niceWork.play();
-            alert("CONGRATULATIONS!\nIt wasn't easy to come this far... give yourself a pat on the back!\n" + scoreTotal + "/7500");
+            alert("CONGRATULATIONS!\nIt wasn't easy to come this far... give yourself a pat on the back!\n" + scoreTotal + " Points!");
         } else if (6000 <= scoreTotal) {
             incredible.play();
-            alert("WOW! INCREDIBLE!\nYou're a Nintendo EXPERT!\n...is that a good thing?\n" + scoreTotal + "/7500");
+            alert("WOW! INCREDIBLE!\nYou're a Nintendo EXPERT!\n...is that a good thing?\n" + scoreTotal + " Points!");
         }
     }
 }

@@ -51,3 +51,6 @@ https://trello.com/b/fc0ajCZ8
 
 **HTML**
 My HTML currently contains 25 buttons: five in each category *class* with an id of their value. This allows for specific organization of button layout.
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bdfcb766-a0b7-4762-9ee9-5fec38fd308f/deploy-status)](https://app.netlify.com/sites/nintendo-jeopardy/deploys)
