@@ -134,3 +134,42 @@ button:hover {
     color: black;
     transition-duration: 1s;
 }
+
+@media (max-width: 800px) {
+    body {
+        background-color: linen;
+        color: black;
+        display: grid;
+        grid-template-rows: 90px 1fr 100px 50px;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        font-weight: lighter;
+    }
+    header {
+        font-size: 60%;
+      }
+      h1 {
+          margin: auto;
+          display: block;
+      }
+      h2 {
+        float: left;
+        margin: auto;
+      }
+        nav {
+            float: right;
+            margin: 5px auto;        
+        }
+            a:hover {
+                color: #2F8CAB;
+            }
+            a {
+                text-decoration: none;
+                color: rgb(100, 100, 100);
+                font-weight: lighter;
+            }
+    main h3 {
+        font-size: 75%;
+    }
+}
