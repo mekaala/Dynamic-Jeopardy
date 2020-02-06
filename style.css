@@ -34,7 +34,7 @@ header {
             font-weight: lighter;
         }
 main h3 {
-    font-size: 100%;
+    font-size: 80%;
     height: 25px;
 }
 main.Nintendo {
@@ -92,10 +92,12 @@ section.final {
     margin: 20px auto;
     width: 30%;
     height: 50px;
-    font-weight: lighter;
     border-radius: 24px;
     transition-duration: 0.4s;
     background-color: rgb(235, 233, 233);
+}
+#score h3 {
+    font-weight: lighter;
 }
 
 footer {
@@ -151,6 +153,7 @@ button:hover {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-weight: lighter;
+    -webkit-text-size-adjust: none;
 }
       h1 {
           margin-top: 30px;
@@ -175,7 +178,7 @@ button:hover {
                 font-weight: lighter;
             }
     main h3 {
-        font-size: 61%;
+        font-size: 12px;
         height: 16px;
     }
     main button {
@@ -203,9 +206,9 @@ button:hover {
         border-radius: 12px;
     }
     p {
-        font-size: 85%;
+        font-size: 18px;
     }
     footer nav {
-        font-size: 85%;
+        font-size: 18px;
     }
 }
