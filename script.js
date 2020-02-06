@@ -35,7 +35,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
 
     mario100.addEventListener('click', superMario100);
     function superMario100() {
-        let quiz = prompt("Who is Mario's brother?");
+        let quiz = prompt("Mario's younger brother.");
         if (quiz.toUpperCase() == "LUIGI") {
             alert("Good job! You have earned 100 points.");
             scoreTotal += score100;
@@ -63,13 +63,13 @@ const mario500 = document.querySelector(".Mario > #fifth");
 
     mario300.addEventListener('click', superMario300);
     function superMario300() {
-        let quiz = prompt("");
-        if (quiz.toUpperCase() == "") {
+        let quiz = prompt("This princess wears yellow and rules Sarasaraland");
+        if (quiz.toUpperCase() == "DAISY" || quiz.toUpperCase() == "DAISY") {
             alert("Nice! 300 points!");
             scoreTotal += score300;
             mario300.classList.add('answer');
         } else {
-            alert("Sorry, it's wrong.");
+            alert("Darn, this one's not easy...");
             mario300.classList.add('wrong');
         } sum += score300;
         mario300.disabled = true;
@@ -78,13 +78,13 @@ const mario500 = document.querySelector(".Mario > #fifth");
 
     mario400.addEventListener('click', superMario400);
     function superMario400() {
-        let quiz = prompt(".");
-        if (quiz.toUpperCase() == "") {
+        let quiz = prompt("This island is home to the Piantas and Noki people in the Mario World.");
+        if (quiz.toUpperCase() == "ISLE DELFINO" || quiz.toUpperCase() == "DELFINO") {
             alert("Wow! 400 points!");
             scoreTotal += score400;
             mario400.classList.add('answer');
         } else {
-            alert("Sorry, it's wrong.");
+            alert("Tough luck, but you knew it was getting harder...");
             mario400.classList.add('wrong');
         } sum += score400;
         mario400.disabled = true;
@@ -92,8 +92,8 @@ const mario500 = document.querySelector(".Mario > #fifth");
 
     mario500.addEventListener('click', superMario500);
     function superMario500() {
-        let quiz = prompt("");
-        if (quiz.toUpperCase() == "") {
+        let quiz = prompt("A strange old man in a white coat.");
+        if (quiz.toUpperCase() == "PROFESSOR E GADD" || quiz.toUpperCase() == "E GADD" || quiz.toUpperCase() == "ELVIN GADD") {
             alert("NO WAY! You got it right! 500 points!");
             scoreTotal += score500;
             mario500.classList.add('answer');
@@ -146,7 +146,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
             scoreTotal += score300;
             zelda300.classList.add('answer');
         } else {
-            alert("Sorry, it's wrong.");
+            alert("Darn, this one's not easy...");
             zelda300.classList.add('wrong');
         } sum += score300;
         zelda300.disabled = true;
@@ -154,13 +154,13 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
 
     zelda400.addEventListener('click', loz400);
     function loz400() {
-        let quiz = prompt("Who is responsible for plunging the world into twilight");
+        let quiz = prompt("Who is responsible for plunging the world into twilight?");
         if (quiz.toUpperCase() == "ZANT" || quiz.toUpperCase() == "GANONDORF") {
             alert("Wow! 400 points!");
             scoreTotal += score400;
             zelda400.classList.add('answer');
         } else {
-            alert("Sorry, it's wrong.");
+            alert("Tough luck, but you knew it was getting harder...");
             zelda400.classList.add('wrong');
         } sum += score400;
         zelda400.disabled = true;
@@ -222,7 +222,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
             scoreTotal += score300;
             pokemon300.classList.add('answer');
         } else {
-            alert("Sorry, it's wrong.");
+            alert("Darn, this one's not easy...");
             pokemon300.classList.add('wrong');
         } sum += score300;
         pokemon300.disabled = true;
@@ -236,7 +236,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
             scoreTotal += score400;
             pokemon400.classList.add('answer');
         } else {
-            alert("Sorry, it's wrong.");
+            alert("Tough luck, but you knew it was getting harder...");
             pokemon400.classList.add('wrong');
         } sum += score400;
         pokemon400.disabled = true;
@@ -300,7 +300,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
             scoreTotal += score300;
             smash300.classList.add('answer');
         } else {
-            alert("Sorry, it's wrong.");
+            alert("Darn, this one's not easy...");
             smash300.classList.add('wrong');
         } sum += score300;
         smash300.disabled = true;
@@ -314,7 +314,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
             scoreTotal += score400;
             smash400.classList.add('answer');
         } else {
-            alert("Sorry, it's wrong.");
+            alert("Tough luck, but you knew it was getting harder...");
             smash400.classList.add('wrong');
         } sum += score400;
         smash400.disabled = true;
@@ -376,7 +376,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
             scoreTotal += score300;
             mat300.classList.add('answer');
         } else {
-            alert("Sorry, it's wrong.");
+            alert("Darn, this one's not easy...");
             mat300.classList.add('wrong');
         } sum += score300;
         mat300.disabled = true;
@@ -390,7 +390,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
             scoreTotal += score400;
             mat400.classList.add('answer');
         } else {
-            alert("Sorry, it's wrong.");
+            alert("Tough luck, but you knew it was getting harder...");
             mat400.classList.add('wrong');
         } sum += score400;
         mat400.disabled = true;
