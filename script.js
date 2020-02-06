@@ -384,8 +384,8 @@ const mat500 = document.querySelector(".Mature > #fifth");
 
     mat400.addEventListener('click', mature400);
     function mature400() {
-        let quiz = prompt("");
-        if (quiz.toUpperCase() == "") {
+        let quiz = prompt("This Intellectual Property from Nintendo has only been released on Mobile Devices.");
+        if (quiz.toUpperCase() == "DRAGALIA LOST") {
             alert("Wow! 400 points!");
             scoreTotal += score400;
             mat400.classList.add('answer');
@@ -398,8 +398,8 @@ const mat500 = document.querySelector(".Mature > #fifth");
 
     mat500.addEventListener('click', mature500);
     function mature500() {
-        let quiz = prompt(""); 
-        if (quiz.toUpperCase() == "") {
+        let quiz = prompt("This game was the very first Nintendo published 'M rated' game."); 
+        if (quiz.toUpperCase() == "ETERNAL DARKNESS" || quiz.toUpperCase() == "ETERNAL DARKNESS: SANITY'S REQUIEM") {
             alert("NO WAY! You got it right! 500 points!");
             scoreTotal += score500;
             mat500.classList.add('answer');
