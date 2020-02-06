@@ -414,3 +414,29 @@ const mat500 = document.querySelector(".Mature > #fifth");
 // BONUS
 // Make another board with double values on HTML, CSS, JavaScript, Git, and Outcomes.
 // Give players bonus points for being precise with their answers.
+
+// AUDIO
+const gameOver = new Audio('sounds/Game-over effect.mp3');
+const niceWork = new Audio('sounds/nice_work.mp3');
+const incredible = new Audio('sounds/incredible.mp3');
+
+
+
+// Finally, I need to make an alert that activates when every prompt has been answered.
+// This can only happen when the sum = 7500.
+// Create a conditional that determines if the player has passed or failed the jeopardy board.
+    // Higher points = higher rank
+    // Need to create a button that will submit their scores.
+
+function finalScore() {
+    if (7000 <= scoreTotal <= 7500) {
+        alert("WOW! INCREDIBLE!\nYou're a Nintendo EXPERT!\n...is that a good thing?")
+        incredible.play();
+    } else if (4000 <= scoreTotal < 7000) {
+        alert("CONGRATULATIONS!\nIt wasn't easy to come this far... give yourself a pat on the back!")
+        niceWork.play();
+    } else if (0 < scoreTotal < 4000) {
+        alert("GAME OVER");
+        gameOver.play();
+    }
+}
