@@ -9,13 +9,6 @@ let score500 = 500;
 let scoreTotal = 0;
 let sum = 0;
 
-// Make an alert that shows the total score of the player.
-scoreBoard = document.querySelector("#score");
-scoreBoard.addEventListener('click',scoreBoardPrompt);
-function scoreBoardPrompt() {
-    alert("Your total score is: " + scoreTotal + " out of " + sum + "!")
-}
-
 // Maybe later, I can try to update the content of the score text in the footer to display the total score.
 
 // Selected for each individual button by query selecting for both their class and id.
@@ -43,8 +36,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
         } else {
             alert("Really? You couldn't get the 100 point question right?")
             mario100.classList.add('wrong');
-        } sum += score100;
-        mario100.disabled = true;
+        } mario100.disabled = true;
     }
 
     mario200.addEventListener('click', superMario200);
@@ -57,8 +49,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
         } else {
             alert("Sorry, this one's a little tougher.");
             mario200.classList.add('wrong');
-        } sum += score200;
-        mario200.disabled = true;
+        } mario200.disabled = true;
     }
 
     mario300.addEventListener('click', superMario300);
@@ -71,8 +62,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
         } else {
             alert("Darn, this one's not easy...");
             mario300.classList.add('wrong');
-        } sum += score300;
-        mario300.disabled = true;
+        } mario300.disabled = true;
 
     }
 
@@ -86,8 +76,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
         } else {
             alert("Tough luck, but you knew it was getting harder...");
             mario400.classList.add('wrong');
-        } sum += score400;
-        mario400.disabled = true;
+        } mario400.disabled = true;
     }
 
     mario500.addEventListener('click', superMario500);
@@ -100,8 +89,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
         } else {
             alert("Yeah... I wouldn't blame you for getting this one wrong...");
             mario500.classList.add('wrong');
-        } sum += score500;
-        mario500.disabled = true;
+        } mario500.disabled = true;
     }
 
 const zelda100 = document.querySelector(".Zelda > #first");
@@ -120,8 +108,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
         } else {
             alert("Really? You couldn't get the 100 point question right?");
             zelda100.classList.add('wrong');
-        } sum += score100;
-        zelda100.disabled = true;
+        } zelda100.disabled = true;
     }
 
     zelda200.addEventListener('click', loz200);
@@ -134,8 +121,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
         } else {
             alert("Sorry, this one's a little tougher.");
             zelda200.classList.add('wrong');
-        } sum += score200;
-        zelda200.disabled = true;
+        } zelda200.disabled = true;
     }
 
     zelda300.addEventListener('click', loz300);
@@ -148,8 +134,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
         } else {
             alert("Darn, this one's not easy...");
             zelda300.classList.add('wrong');
-        } sum += score300;
-        zelda300.disabled = true;
+        } zelda300.disabled = true;
     }
 
     zelda400.addEventListener('click', loz400);
@@ -162,8 +147,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
         } else {
             alert("Tough luck, but you knew it was getting harder...");
             zelda400.classList.add('wrong');
-        } sum += score400;
-        zelda400.disabled = true;
+        } zelda400.disabled = true;
     }
 
     zelda500.addEventListener('click', loz500);
@@ -176,8 +160,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
         } else {
             alert("Yeah... I wouldn't blame you for getting this one wrong...");
             zelda500.classList.add('wrong');
-        } sum += score500;
-        zelda500.disabled = true;
+        } zelda500.disabled = true;
     }
 
 const pokemon100 = document.querySelector(".Pokemon > #first");
@@ -196,8 +179,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
         } else {
             alert("Really? You couldn't get the 100 point question right?");
             pokemon100.classList.add('wrong');
-        } sum += score100;
-        pokemon100.disabled = true;
+        } pokemon100.disabled = true;
     }
 
     pokemon200.addEventListener('click', poke200);
@@ -210,8 +192,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
         } else {
             alert("Sorry, this one's a little tougher.");
             pokemon200.classList.add('wrong');
-        } sum += score200;
-        pokemon200.disabled = true;
+        } pokemon200.disabled = true;
     }
 
     pokemon300.addEventListener('click', poke300);
@@ -224,8 +205,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
         } else {
             alert("Darn, this one's not easy...");
             pokemon300.classList.add('wrong');
-        } sum += score300;
-        pokemon300.disabled = true;
+        } pokemon300.disabled = true;
     }
 
     pokemon400.addEventListener('click', poke400);
@@ -238,9 +218,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
         } else {
             alert("Tough luck, but you knew it was getting harder...");
             pokemon400.classList.add('wrong');
-        } sum += score400;
-        pokemon400.disabled = true;
-
+        } pokemon400.disabled = true;
     }
 
     pokemon500.addEventListener('click', poke500);
@@ -253,9 +231,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
         } else {
             alert("Yeah... I wouldn't blame you for getting this one wrong...");
             pokemon500.classList.add('wrong');
-        } sum += score500;
-        pokemon500.disabled = true;
-
+        } pokemon500.disabled = true;
     }
 
 const smash100 = document.querySelector(".Smash > #first");
@@ -274,8 +250,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
         } else {
             alert("Really? You couldn't get the 100 point question right?");
             smash100.classList.add('wrong');
-        } sum += score100;
-        smash100.disabled = true;
+        } smash100.disabled = true;
     }
 
     smash200.addEventListener('click', smashBros200);
@@ -288,8 +263,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
         } else {
             alert("Sorry, this one's a little tougher.");
             smash200.classList.add('wrong');
-        } sum += score200;
-        smash200.disabled = true;
+        } smash200.disabled = true;
     }
 
     smash300.addEventListener('click', smashBros300);
@@ -302,8 +276,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
         } else {
             alert("Darn, this one's not easy...");
             smash300.classList.add('wrong');
-        } sum += score300;
-        smash300.disabled = true;
+        } smash300.disabled = true;
     }
 
     smash400.addEventListener('click', smashBros400);
@@ -316,8 +289,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
         } else {
             alert("Tough luck, but you knew it was getting harder...");
             smash400.classList.add('wrong');
-        } sum += score400;
-        smash400.disabled = true;
+        } smash400.disabled = true;
     }
 
     smash500.addEventListener('click', smashBros500);
@@ -330,8 +302,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
         } else {
             alert("Yeah... I wouldn't blame you for getting this one wrong...");
             smash500.classList.add('wrong');
-        } sum += score500;
-        smash500.disabled = true;
+        } smash500.disabled = true;
     }
 
 const mat100 = document.querySelector(".Mature > #first");
@@ -350,8 +321,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
         } else {
             alert("Really? You couldn't get the 100 point question right?");
             mat100.classList.add('wrong');
-        } sum += score100;
-        mat100.disabled = true;
+        } mat100.disabled = true;
     }
 
     mat200.addEventListener('click', mature200);
@@ -364,8 +334,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
         } else {
             alert("Sorry, this one's a little tougher.");
             mat200.classList.add('wrong');
-        } sum += score200;
-        mat200.disabled = true;
+        } mat200.disabled = true;
     }
 
     mat300.addEventListener('click', mature300);
@@ -378,8 +347,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
         } else {
             alert("Darn, this one's not easy...");
             mat300.classList.add('wrong');
-        } sum += score300;
-        mat300.disabled = true;
+        } mat300.disabled = true;
     }
 
     mat400.addEventListener('click', mature400);
@@ -392,8 +360,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
         } else {
             alert("Tough luck, but you knew it was getting harder...");
             mat400.classList.add('wrong');
-        } sum += score400;
-        mat400.disabled = true;
+        } mat400.disabled = true;
     }
 
     mat500.addEventListener('click', mature500);
@@ -406,10 +373,33 @@ const mat500 = document.querySelector(".Mature > #fifth");
         } else {
             alert("Yeah... I wouldn't blame you for getting this one wrong...");
             mat500.classList.add('wrong');
-        } sum += score500;
-        mat500.disabled = true;
+        } mat500.disabled = true;
     }
 
+
+
+
+// I need to make an alert that activates when every prompt has been answered.
+// This can only happen when the sum = 7500.
+// Create a conditional that determines if the player has passed or failed the jeopardy board.
+    // Higher points = higher rank
+    // Need to create a button that will submit their scores.
+scoreBoard = document.querySelector("#score");
+scoreBoard.addEventListener('click',finalScore);
+function finalScore() {
+    if (confirm("Are you sure you want to submit your score?")) {
+        if (scoreTotal < 2000) {
+            gameOver.play();
+            alert("GAME OVER\n" + scoreTotal + "/7500");
+        } else if (scoreTotal < 6000) {
+            niceWork.play();
+            alert("CONGRATULATIONS!\nIt wasn't easy to come this far... give yourself a pat on the back!\n" + scoreTotal + "/7500");
+        } else if (6000 <= scoreTotal) {
+            incredible.play();
+            alert("WOW! INCREDIBLE!\nYou're a Nintendo EXPERT!\n...is that a good thing?\n" + scoreTotal + "/7500");
+        }
+    }
+}
 
 // BONUS
 // Make another board with double values on HTML, CSS, JavaScript, Git, and Outcomes.
@@ -419,24 +409,3 @@ const mat500 = document.querySelector(".Mature > #fifth");
 const gameOver = new Audio('sounds/Game-over effect.mp3');
 const niceWork = new Audio('sounds/nice_work.mp3');
 const incredible = new Audio('sounds/incredible.mp3');
-
-
-
-// Finally, I need to make an alert that activates when every prompt has been answered.
-// This can only happen when the sum = 7500.
-// Create a conditional that determines if the player has passed or failed the jeopardy board.
-    // Higher points = higher rank
-    // Need to create a button that will submit their scores.
-
-function finalScore() {
-    if (7000 <= scoreTotal <= 7500) {
-        alert("WOW! INCREDIBLE!\nYou're a Nintendo EXPERT!\n...is that a good thing?")
-        incredible.play();
-    } else if (4000 <= scoreTotal < 7000) {
-        alert("CONGRATULATIONS!\nIt wasn't easy to come this far... give yourself a pat on the back!")
-        niceWork.play();
-    } else if (0 < scoreTotal < 4000) {
-        alert("GAME OVER");
-        gameOver.play();
-    }
-}

@@ -40,6 +40,12 @@ main button {
     height: 160px;
     font-size: larger;
     font-weight: lighter;
+    border-radius: 24px;
+}
+button#score {
+    display: block;
+    margin: 20px auto;
+    font-weight: lighter;
 }
 .answer {
     background-color: #2F8CAB;
