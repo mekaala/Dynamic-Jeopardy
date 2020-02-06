@@ -8,7 +8,6 @@ let score400 = 400;
 let score500 = 500;
 let scoreFinal = 1000;
 let scoreTotal = 0;
-let sum = 0;
 
 // Maybe later, I can try to update the content of the score text in the footer to display the total score.
 
@@ -322,7 +321,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
         } else {
             alert("Really? You couldn't get the 100 point question right?");
             mat100.classList.add('wrong');
-        } mat100.disabled = true;
+        }
     }
 
     mat200.addEventListener('click', mature200);
@@ -335,7 +334,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
         } else {
             alert("Sorry, this one's a little tougher.");
             mat200.classList.add('wrong');
-        } mat200.disabled = true;
+        }
     }
 
     mat300.addEventListener('click', mature300);
@@ -348,7 +347,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
         } else {
             alert("Darn, this one's not easy...");
             mat300.classList.add('wrong');
-        } mat300.disabled = true;
+        }
     }
 
     mat400.addEventListener('click', mature400);
@@ -361,7 +360,7 @@ const mat500 = document.querySelector(".Mature > #fifth");
         } else {
             alert("Tough luck, but you knew it was getting harder...");
             mat400.classList.add('wrong');
-        } mat400.disabled = true;
+        }
     }
 
     mat500.addEventListener('click', mature500);
@@ -374,10 +373,9 @@ const mat500 = document.querySelector(".Mature > #fifth");
         } else {
             alert("Yeah... I wouldn't blame you for getting this one wrong...");
             mat500.classList.add('wrong');
-        } mat500.disabled = true;
+        }
     }
-
-const finalQuestion = document.querySelector("section.final");
+const finalQuestion = document.querySelector("#last");
 finalQuestion.addEventListener('click',lastFight);
 function lastFight() {
     let quiz = prompt("This game was the very first Nintendo published 'M rated' game."); 
@@ -386,9 +384,9 @@ function lastFight() {
             scoreTotal += scoreFinal;
             finalQuestion.classList.add('answer');
         } else {
-            alert("Yeah... I wouldn't blame you for getting this one wrong...");
+            alert("All is truly lost...");
             finalQuestion.classList.add('wrong');
-        } finalQuestion.disabled = true;
+        }
     }
 
 
@@ -397,18 +395,22 @@ function lastFight() {
 // Create a conditional that determines if the player has passed or failed the jeopardy board.
     // Higher points = higher rank
     // Need to create a button that will submit their scores.
-scoreBoard = document.querySelector("#score");
+const scoreBoard = document.querySelector("#score");
+const body = document.querySelector('body');
 scoreBoard.addEventListener('click',finalScore);
 function finalScore() {
     if (confirm("Are you sure you want to submit your score?")) {
         if (scoreTotal < 2000) {
             gameOver.play();
+            body.classList.add('game_over');
             alert("GAME OVER\n" + scoreTotal + " Points");
         } else if (scoreTotal < 6000) {
             niceWork.play();
+            body.classList.add('great')
             alert("CONGRATULATIONS!\nIt wasn't easy to come this far... give yourself a pat on the back!\n" + scoreTotal + " Points!");
         } else if (6000 <= scoreTotal) {
             incredible.play();
+            body.classList.add('incredible')
             alert("WOW! INCREDIBLE!\nYou're a Nintendo EXPERT!\n...is that a good thing?\n" + scoreTotal + " Points!");
         }
     }

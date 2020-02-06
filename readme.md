@@ -33,10 +33,9 @@ Numerical Values must be added together to create a score for the player.
 
 **EXTRA: What else can be added to the game (IF I have more time)?**
 
-Multiple players: Track the scores of multiple players.
-A score board IF there are multiple players.
 A "grade". Compare the total points earned with the total points they could have earned SO FAR.
-
+I can make a second board that is only accessible to those who have earned at least half of all points available.
+I can add a Multiple Choice Prompt to make the game a little easier.
 
 
 **User Stories**

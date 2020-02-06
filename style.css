@@ -1,5 +1,5 @@
 body {
-    background-color :linen;
+    background-color: linen;
     color: black;
     display: grid;
     grid-template-rows: 90px 1fr 100px 50px;
@@ -30,7 +30,7 @@ header {
         }
         a {
             text-decoration: none;
-            color: black;
+            color: rgb(100, 100, 100);
             font-weight: lighter;
         }
 main h3 {
@@ -65,47 +65,72 @@ main button {
     font-size: larger;
     font-weight: lighter;
     border-radius: 24px;
-    font-family: 'Raleway', sans-serif;}
-button:hover {
-    background-color: silver;
-    color: black;
+    font-family: 'Raleway', sans-serif;
+    transition-duration: 0.4s;
+    background-color: rgb(235, 233, 233);
 }
+
 section.final {
     grid-row: 3;
     grid-column: 1 / span 5;
     display: block;
 }
 #last {
-    background-color: purple;
-    color: white;
     width: 100%;
     height: 100px;
     border-radius: 24px;
+    transition-duration: 0.4s;
+    background-color: rgb(235, 233, 233);
 }
 #last h1 {
     font-weight: lighter;
     font-family: 'Raleway', sans-serif;
 }
-button#score {
+#score {
     display: block;
     margin: 20px auto;
     width: 30%;
     height: 50px;
     font-weight: lighter;
     border-radius: 24px;
+    transition-duration: 0.4s;
+    background-color: rgb(235, 233, 233);
 }
-.answer {
-    background-color: #2F8CAB;
-    color: white;
-}
-.wrong {
-    background-color: #FE4902;
-    color: white;
-}
+
 footer {
     grid-row: 4;
     grid-column: 1 / span 5;
 }
 footer nav {
     display: inline-block;
+}
+
+.answer {
+    background-color: #2F8CAB;
+    color: white;
+    cursor: not-allowed;
+}
+.wrong {
+    background-color: #FE4902;
+    color: white;
+    cursor: not-allowed;
+}
+button:hover {
+    opacity: 0.85;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.game_over {
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
+}
+.great {
+    background-color: rgb(66, 148, 216);
+    color: black;
+    transition-duration: 1s;
+}
+.incredible {
+    background-color: rgb(255, 232, 98);
+    color: black;
+    transition-duration: 1s;
 }
