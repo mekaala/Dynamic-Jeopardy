@@ -6,6 +6,7 @@ let score200 = 200;
 let score300 = 300;
 let score400 = 400;
 let score500 = 500;
+let scoreFinal = 2500;
 let scoreTotal = 0;
 let sum = 0;
 
@@ -376,7 +377,19 @@ const mat500 = document.querySelector(".Mature > #fifth");
         } mat500.disabled = true;
     }
 
-
+const finalQuestion = document.querySelector("section.final");
+finalQuestion.addEventListener('click',lastFight);
+function lastFight() {
+    let quiz = prompt("This game was the very first Nintendo published 'M rated' game."); 
+        if (quiz.toUpperCase() == "ETERNAL DARKNESS" || quiz.toUpperCase() == "ETERNAL DARKNESS: SANITY'S REQUIEM") {
+            alert("NO WAY! You got it right! 2500 points!");
+            scoreTotal += scoreFinal;
+            finalQuestion.classList.add('answer');
+        } else {
+            alert("Yeah... I wouldn't blame you for getting this one wrong...");
+            finalQuestion.classList.add('wrong');
+        } finalQuestion.disabled = true;
+    }
 
 
 // I need to make an alert that activates when every prompt has been answered.
@@ -409,3 +422,7 @@ function finalScore() {
 const gameOver = new Audio('sounds/Game-over effect.mp3');
 const niceWork = new Audio('sounds/nice_work.mp3');
 const incredible = new Audio('sounds/incredible.mp3');
+
+
+// QoL
+// Create a mouseover event that changes the color of each button.
