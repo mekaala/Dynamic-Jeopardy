@@ -1,3 +1,8 @@
+**NINTENDO JEOPARDY**
+In this Nintendo themed board, players must test their knowledge by answering a series of questions from five categories. The value of each question depends on their difficulty. Easier questions have lower point values, while more difficult questions have higher values. Every panel except for the Final Question is multiple choice.
+
+In order to win, players must receive at least 2000 points or more. The game will respond to your rank with an audio message and a background color change!
+
 **MINIMUM VIABLE PRODUCT**
 
 First design your MVP (Minimum Viable Product). Have a plan for completing an MVP before getting too involved with advanced features. Start writing your README file with some basic ideas. Timebox any experimental or optional ideas, features, or technologies. Remember that good time management is key!

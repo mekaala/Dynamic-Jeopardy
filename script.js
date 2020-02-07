@@ -414,11 +414,11 @@ function finalScore() {
             gameOver.play();
             body.classList.add('game_over');
             alert("GAME OVER\n" + scoreTotal + " Points");
-        } else if (scoreTotal < 6000) {
+        } else if (scoreTotal < 7000) {
             niceWork.play();
             body.classList.add('great')
             alert("CONGRATULATIONS!\nIt wasn't easy to come this far... give yourself a pat on the back!\n" + scoreTotal + " Points!");
-        } else if (6000 <= scoreTotal) {
+        } else if (7000 <= scoreTotal) {
             incredible.play();
             body.classList.add('incredible')
             alert("WOW! INCREDIBLE!\nYou're a Nintendo EXPERT!\n...is that a good thing?\n" + scoreTotal + " Points!");
