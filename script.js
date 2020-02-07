@@ -219,7 +219,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
     pokemon400.addEventListener('click', poke400);
     function poke400() {
         let quiz = prompt("This legendary Pokémon sworn to lend its power to one who wishes to build an ideal world.\n\nA: Kyurem\nB: Landorus\nC: Zekrom\nD: Reshiram");
-        if (quiz.toUpperCase() == "ZEKROM" || quiz.toUpperCase() == "ZEKROM") {
+        if (quiz.toUpperCase() == "C" || quiz.toUpperCase() == "ZEKROM") {
             alert("Wow! 400 points!");
             scoreTotal += score400;
             pokemon400.classList.add('answer');
@@ -231,7 +231,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
 
     pokemon500.addEventListener('click', poke500);
     function poke500() {
-        let quiz = prompt("Before Pikachu was decided, this other Pokémon was going to the main mascot of the series\n\nA: Clefairy\nB: Mew\nC: Jigglypuff\nD: Charizard.");
+        let quiz = prompt("Before Pikachu was decided, this other Pokémon was going to the main mascot of the series.\n\nA: Clefairy\nB: Mew\nC: Jigglypuff\nD: Charizard");
         if (quiz.toUpperCase() == "A" || quiz.toUpperCase() == "CLEFAIRY") {
             alert("NO WAY! You got it right! 500 points!");
             scoreTotal += score500;
@@ -251,12 +251,12 @@ const smash500 = document.querySelector(".Smash > #fifth");
     smash100.addEventListener('click', smashBros100);
     function smashBros100() {
         let quiz = prompt("This fighter shows his moves with his legendary Falcon Punch.\n\nA: Mr. Game and Watch\nB: Fox\nC: Captain Falcon\nD: Byleth");
-        if (quiz.toUpperCase() == "CAPTAIN FALCON") {
+        if (quiz.toUpperCase() == "C" || quiz.toUpperCase() == "CAPTAIN FALCON") {
             alert("Good job! You have earned 100 points.");
             scoreTotal += score100;
             smash100.classList.add('answer');
         } else {
-            alert("Really? You couldn't get the 100 point question right?\nThe correct answer is\nA: Captain Falcon")
+            alert("Really? You couldn't get the 100 point question right?\nThe correct answer is\nC: Captain Falcon")
             smash100.classList.add('wrong');
         } smash100.disabled = true;
     }
