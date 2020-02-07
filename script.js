@@ -36,7 +36,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
         } else {
             alert("Really? You couldn't get the 100 point question right?")
             mario100.classList.add('wrong');
-        } mario100.disabled = true;
+        }
     }
 
     mario200.addEventListener('click', superMario200);
@@ -49,7 +49,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
         } else {
             alert("Sorry, this one's a little tougher.");
             mario200.classList.add('wrong');
-        } mario200.disabled = true;
+        }
     }
 
     mario300.addEventListener('click', superMario300);
@@ -62,7 +62,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
         } else {
             alert("Darn, this one's not easy...");
             mario300.classList.add('wrong');
-        } mario300.disabled = true;
+        }
 
     }
 
@@ -76,7 +76,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
         } else {
             alert("Tough luck, but you knew it was getting harder...");
             mario400.classList.add('wrong');
-        } mario400.disabled = true;
+        }
     }
 
     mario500.addEventListener('click', superMario500);
@@ -89,7 +89,7 @@ const mario500 = document.querySelector(".Mario > #fifth");
         } else {
             alert("Yeah... I wouldn't blame you for getting this one wrong...");
             mario500.classList.add('wrong');
-        } mario500.disabled = true;
+        }
     }
 
 const zelda100 = document.querySelector(".Zelda > #first");
@@ -108,7 +108,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
         } else {
             alert("Really? You couldn't get the 100 point question right?");
             zelda100.classList.add('wrong');
-        } zelda100.disabled = true;
+        }
     }
 
     zelda200.addEventListener('click', loz200);
@@ -121,7 +121,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
         } else {
             alert("Sorry, this one's a little tougher.");
             zelda200.classList.add('wrong');
-        } zelda200.disabled = true;
+        }
     }
 
     zelda300.addEventListener('click', loz300);
@@ -134,7 +134,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
         } else {
             alert("Darn, this one's not easy...");
             zelda300.classList.add('wrong');
-        } zelda300.disabled = true;
+        }
     }
 
     zelda400.addEventListener('click', loz400);
@@ -147,7 +147,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
         } else {
             alert("Tough luck, but you knew it was getting harder...");
             zelda400.classList.add('wrong');
-        } zelda400.disabled = true;
+        }
     }
 
     zelda500.addEventListener('click', loz500);
@@ -160,7 +160,7 @@ const zelda500 = document.querySelector(".Zelda > #fifth");
         } else {
             alert("Yeah... I wouldn't blame you for getting this one wrong...");
             zelda500.classList.add('wrong');
-        } zelda500.disabled = true;
+        }
     }
 
 const pokemon100 = document.querySelector(".Pokemon > #first");
@@ -179,7 +179,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
         } else {
             alert("Really? You couldn't get the 100 point question right?");
             pokemon100.classList.add('wrong');
-        } pokemon100.disabled = true;
+        }
     }
 
     pokemon200.addEventListener('click', poke200);
@@ -192,7 +192,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
         } else {
             alert("Sorry, this one's a little tougher.");
             pokemon200.classList.add('wrong');
-        } pokemon200.disabled = true;
+        }
     }
 
     pokemon300.addEventListener('click', poke300);
@@ -205,7 +205,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
         } else {
             alert("Darn, this one's not easy...");
             pokemon300.classList.add('wrong');
-        } pokemon300.disabled = true;
+        }
     }
 
     pokemon400.addEventListener('click', poke400);
@@ -218,7 +218,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
         } else {
             alert("Tough luck, but you knew it was getting harder...");
             pokemon400.classList.add('wrong');
-        } pokemon400.disabled = true;
+        }
     }
 
     pokemon500.addEventListener('click', poke500);
@@ -231,7 +231,7 @@ const pokemon500 = document.querySelector(".Pokemon > #fifth");
         } else {
             alert("Yeah... I wouldn't blame you for getting this one wrong...");
             pokemon500.classList.add('wrong');
-        } pokemon500.disabled = true;
+        }
     }
 
 const smash100 = document.querySelector(".Smash > #first");
@@ -250,7 +250,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
         } else {
             alert("Really? You couldn't get the 100 point question right?");
             smash100.classList.add('wrong');
-        } smash100.disabled = true;
+        }
     }
 
     smash200.addEventListener('click', smashBros200);
@@ -263,7 +263,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
         } else {
             alert("Sorry, this one's a little tougher.");
             smash200.classList.add('wrong');
-        } smash200.disabled = true;
+        }
     }
 
     smash300.addEventListener('click', smashBros300);
@@ -276,7 +276,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
         } else {
             alert("Darn, this one's not easy...");
             smash300.classList.add('wrong');
-        } smash300.disabled = true;
+        }
     }
 
     smash400.addEventListener('click', smashBros400);
@@ -289,7 +289,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
         } else {
             alert("Tough luck, but you knew it was getting harder...");
             smash400.classList.add('wrong');
-        } smash400.disabled = true;
+        }
     }
 
     smash500.addEventListener('click', smashBros500);
@@ -302,7 +302,7 @@ const smash500 = document.querySelector(".Smash > #fifth");
         } else {
             alert("Yeah... I wouldn't blame you for getting this one wrong...");
             smash500.classList.add('wrong');
-        } smash500.disabled = true;
+        }
     }
 
 const mat100 = document.querySelector(".Mature > #first");
@@ -378,13 +378,13 @@ const mat500 = document.querySelector(".Mature > #fifth");
 const finalQuestion = document.querySelector("#last");
 finalQuestion.addEventListener('click',lastFight);
 function lastFight() {
-    let quiz = prompt("This game was the very first Nintendo published 'M rated' game."); 
-        if (quiz.toUpperCase() == "ETERNAL DARKNESS" || quiz.toUpperCase() == "ETERNAL DARKNESS: SANITY'S REQUIEM") {
+    let quiz = prompt("This Tanooki charges you endlessly, sinking you into deeper debt."); 
+        if (quiz.toUpperCase() == "TOM NOOK" || quiz.toUpperCase() == "NOOK") {
             alert("NO WAY! You got it right! 1000 points!");
             scoreTotal += scoreFinal;
             finalQuestion.classList.add('answer');
         } else {
-            alert("All is truly lost...");
+            alert("TOM NOOK WILL TAKE YOUR SOUL.");
             finalQuestion.classList.add('wrong');
         }
     }
