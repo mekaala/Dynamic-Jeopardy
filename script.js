@@ -463,3 +463,9 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
+// If I want to replace prompts with modal boxes, I need to figure out how to do so
+// Want to make it grow from the center
+// Need to put in a text box for answering!
