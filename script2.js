@@ -4,10 +4,6 @@ let score200 = 200;
 let score300 = 300;
 let score400 = 400;
 let score500 = 500;
-let score600 = 600;
-let score700 = 700;
-let score800 = 800;
-let score900 = 900;
 let score1000 = 1000;
 let scoreTotal = 0;
 
@@ -15,6 +11,7 @@ const btns = document.getElementsByClassName("openmodal");
 const modal = document.querySelectorAll(".modal");
 const spans = document.getElementsByClassName("close-btn");
 const answer = document.querySelectorAll(".modal-footer");
+const question = document.querySelectorAll(".modal-header")
 
 for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener('click', openModal);
@@ -33,15 +30,13 @@ for (let i = 0; i < spans.length; i++) {
  }
 
  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
+    if (event.target == modal[i]) {
+      modal[i].style.display = "none";
     }
   }
 
 // Choose an answer
-// Clicking button will display answer at bottom
-// Right answer will turn button blue
-// Wrong answer will turn button red
+// Clicking button will replace choices with answer
 // Button will be disabled
 
 const multButton = document.querySelectorAll(".modal-content");
@@ -55,19 +50,12 @@ for (let i = 0; i < multButton.length; i++) {
     } 
 }
 
+// Updated content so that choosing the correct answer will turn the point button blue.
 const correctAnswer = document.querySelectorAll(".correct");
 for (let i = 0; i < correctAnswer.length; i++) {
     correctAnswer[i].addEventListener('click', getPoints);
     function getPoints() {
         btns[i].classList.add('win');
-    }
-}
-
-const wrongAnswer = document.querySelectorAll(".incorrect");
-for (let j = 0; j < wrongAnswer.length; j++) {
-    wrongAnswer[j].addEventListener('click', noPoints);
-    function noPoints() {
-        btns[i].classList.add('wrong');
     }
 }
 
@@ -160,17 +148,10 @@ const about = document.getElementById("modalAbout");
 // Get the button that opens the modal
 const buttons = document.getElementById("aboutMe");
 
-// Get the <span> element that closes the modal
-const span = document.getElementsByClassName("close-btn")[0];
 
 // When the user clicks on the button, open the modal
 buttons.onclick = function() {
   about.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  about.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it

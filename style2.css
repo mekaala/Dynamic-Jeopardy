@@ -150,11 +150,7 @@ footer {
     color: white;
     cursor: not-allowed;
 }
-.wrong {
-    background-color: #FE4902;
-    color: white;
-    cursor: not-allowed;
-}
+
 button:hover {
     opacity: 0.85;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -191,7 +187,8 @@ button:hover {
   }
     .modal-header {
         position: relative; 
-        background-color: white;
+        background-color: rgb(218, 96, 49);
+        color: white;
         border-radius: 24px 24px 0 0;
         padding: 20px; 
         margin: auto; 
@@ -201,7 +198,8 @@ button:hover {
     }
     .modal-content {
         position: relative; 
-        background-color: white;
+        background-color: rgb(218, 96, 49);
+        color: white;
         border-radius: 0 0 24px 24px;
         padding: 20px; 
         margin: auto; 
@@ -209,16 +207,20 @@ button:hover {
         animation-name: fadeIn;
         animation-duration: 1s;
     }
+    div button {
+        width: 40%;
+        display: inline-block;
+        margin: 10px;
+    }
     .modal-footer {
         display: none;
-        position: relative; 
-        background-color: white;
+        position: relative;
+        background-color: rgb(218, 96, 49);
+        color: white;
         border-radius: 0 0 24px 24px;
         padding: 20px; 
         margin: auto; 
         width: 75%;  
-        animation-name: fadeIn;
-        animation-duration: 1s;
     }
 
   .game-over.modal-content, .great.modal-content, .incredible.modal-content {
