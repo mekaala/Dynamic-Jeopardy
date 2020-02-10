@@ -50,7 +50,7 @@ https://trello.com/b/fc0ajCZ8
 **Wire Frames**
 
 <img src="Wireframes/Web 1920 – 1.png" alt = "Wireframe of main screen">
-<img src="Wireframes/Web 1920 - 2.png" alt = "Question wireframe">
+<img src="Wireframes/Web 1920 – 2.png" alt = "Question wireframe">
 
 
 **HTML**
