@@ -61,25 +61,6 @@ for (let i = 0; i < correctAnswer.length; i++) {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Defined variables for the correct multiple choice answer
 // (depending on the value of the question),
 // such that awards the correct amount of points to player
@@ -115,14 +96,6 @@ function add500() {
     scoreTotal += score500;
 }}
 
-
-
-
-
-
-
-
-
 const scoreBoard = document.querySelector("#score");
 const body = document.querySelector('body');
 scoreBoard.addEventListener('click',finalScore);
@@ -154,3 +127,27 @@ const niceWork = new Audio('sounds/nice_work.mp3');
 const incredible = new Audio('sounds/incredible.mp3');
 
 
+const about = document.getElementById("modalAbout");
+
+// Get the button that opens the modal
+const buttons = document.getElementById("aboutMe");
+
+// Get the <span> element that closes the modal
+const span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+buttons.onclick = function() {
+  about.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  about.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == about) {
+    about.style.display = "none";
+  }
+}
