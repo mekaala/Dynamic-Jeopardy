@@ -20,6 +20,7 @@ for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener('click', openModal);
     function openModal() {
         modal[i].style.display = "block";
+        multButton[i].style.display = "block";
     }
 }
 
@@ -33,7 +34,7 @@ for (let i = 0; i < spans.length; i++) {
 
  window.onclick = function(event) {
     if (event.target == modal) {
-      modal[i].style.display = "none";
+      modal.style.display = "none";
     }
   }
 
@@ -49,15 +50,24 @@ for (let i = 0; i < multButton.length; i++) {
     function showAnswer() {
         for (let i = 0; i < answer.length; i++) {
             answer[i].style.display = "block";
+            multButton[i].style.display = "none";
         } btns[i].disabled = true;
-    }
+    } 
 }
 
 const correctAnswer = document.querySelectorAll(".correct");
 for (let i = 0; i < correctAnswer.length; i++) {
     correctAnswer[i].addEventListener('click', getPoints);
     function getPoints() {
-        btns[i].classList.add('correct');
+        btns[i].classList.add('win');
+    }
+}
+
+const wrongAnswer = document.querySelectorAll(".incorrect");
+for (let j = 0; j < wrongAnswer.length; j++) {
+    wrongAnswer[j].addEventListener('click', noPoints);
+    function noPoints() {
+        btns[i].classList.add('wrong');
     }
 }
 
@@ -95,26 +105,44 @@ p500[i].addEventListener('click',add500);
 function add500() {
     scoreTotal += score500;
 }}
+const p1000 = document.querySelector("#ten")
+p1000.addEventListener('click',add1000);
+function add1000() {
+    scoreTotal += score1000;
+}
 
 const scoreBoard = document.querySelector("#score");
 const body = document.querySelector('body');
 scoreBoard.addEventListener('click',finalScore);
+const game_Over = document.querySelector("body > section > div.modal.game-over");
+const nice = document.querySelector("body > section > div.modal.great");
+const perfect = document.querySelector("body > section > div.modal.incredible");
+
+const h = document.getElementById("end");
+const l = document.getElementById("never");
+const m = document.getElementById("dies");
+
+
 function finalScore() {
     if (confirm("Are you sure you want to submit your score?")) {
         if (scoreTotal < 2000) {
             gameOver.play();
             body.classList.add('game_over');
-            alert("GAME OVER\n" + scoreTotal + " Points");
+            game_Over.style.display = "block";
+            h.appendChild(document.createTextNode(scoreTotal));
         } else if (scoreTotal < 7000) {
             niceWork.play();
             body.classList.add('great')
-            alert("CONGRATULATIONS!\nIt wasn't easy to come this far... give yourself a pat on the back!\n" + scoreTotal + " Points!");
+            nice.style.display = "block";
+            l.appendChild(document.createTextNode(scoreTotal));
         } else if (7000 <= scoreTotal) {
             incredible.play();
             body.classList.add('incredible')
-            alert("WOW! INCREDIBLE!\nYou're a Nintendo EXPERT!\n...is that a good thing?\n" + scoreTotal + " Points!");
+            perfect.style.display = "block";
+            m.appendChild(document.createTextNode(scoreTotal));
         }
-    }
+    } Array.from((btns), e => e.disabled = true);
+    scoreBoard.disabled = true;
 }
 
 // BONUS
@@ -133,7 +161,7 @@ const about = document.getElementById("modalAbout");
 const buttons = document.getElementById("aboutMe");
 
 // Get the <span> element that closes the modal
-const span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close-btn")[0];
 
 // When the user clicks on the button, open the modal
 buttons.onclick = function() {
