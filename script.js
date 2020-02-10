@@ -439,7 +439,7 @@ const incredible = new Audio('sounds/incredible.mp3');
 
 
 // Get the modal
-const modal = document.getElementById("myModal");
+const modal = document.getElementById("modalAbout");
 
 // Get the button that opens the modal
 const btn = document.getElementById("aboutMe");
