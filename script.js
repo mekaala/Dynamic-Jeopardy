@@ -7,28 +7,24 @@ let score500 = 500;
 let score1000 = 1000;
 let scoreTotal = 0;
 
-const btns = document.getElementsByClassName("openmodal");
+const btns = document.querySelectorAll(".openmodal");
 const modal = document.querySelectorAll(".modal");
 const spans = document.getElementsByClassName("close-btn");
 const answer = document.querySelectorAll(".modal-footer");
 const question = document.querySelectorAll(".modal-header")
 
 for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener('click', openModal);
-    function openModal() {
+    btns[i].onclick = function() {
         modal[i].style.display = "block";
         multButton[i].style.display = "block";
     }
 }
-
 for (let i = 0; i < spans.length; i++) {
-    spans[i].addEventListener('click', closeBox);
-    function closeBox() {
+    spans[i].onclick = function() {
        modal[i].style.display = "none";
        Array.from(document.querySelectorAll(".modal-footer"), e => e.style.display = "none");
     }
  }
-
  window.onclick = function(event) {
     if (event.target == modal[i]) {
       modal[i].style.display = "none";
@@ -41,20 +37,18 @@ for (let i = 0; i < spans.length; i++) {
 
 const multButton = document.querySelectorAll(".modal-content");
 for (let i = 0; i < multButton.length; i++) {
-    multButton[i].addEventListener('click', showAnswer);
-    function showAnswer() {
-        for (let i = 0; i < answer.length; i++) {
-            answer[i].style.display = "block";
-            multButton[i].style.display = "none";
-        } btns[i].disabled = true;
-    } 
-}
+    multButton[i].onclick = function() {
+        answer[i].style.display = "block";
+        multButton[i].style.display = "none";
+        btns[i].disabled = true;
+    }
+} 
+
 
 // Updated content so that choosing the correct answer will turn the point button blue.
 const correctAnswer = document.querySelectorAll(".correct");
 for (let i = 0; i < correctAnswer.length; i++) {
-    correctAnswer[i].addEventListener('click', getPoints);
-    function getPoints() {
+    correctAnswer[i].onclick = function() {
         btns[i].classList.add('win');
     }
 }
@@ -129,8 +123,9 @@ function finalScore() {
             perfect.style.display = "block";
             m.appendChild(document.createTextNode(scoreTotal));
         }
-    } Array.from((btns), e => e.disabled = true);
-    scoreBoard.disabled = true;
+        Array.from((btns), e => e.disabled = true);
+        scoreBoard.disabled = true;
+    }
 }
 
 // BONUS
@@ -147,7 +142,10 @@ const about = document.getElementById("modalAbout");
 
 // Get the button that opens the modal
 const buttons = document.getElementById("aboutMe");
-
+const span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+    about.style.display = "none";
+  }
 
 // When the user clicks on the button, open the modal
 buttons.onclick = function() {
