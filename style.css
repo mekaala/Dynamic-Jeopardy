@@ -42,6 +42,7 @@ header {
             font-weight: lighter;
         }
 
+
 main h3 {
     height: 40px;
 }
@@ -77,91 +78,96 @@ main h3 {
             transition-duration: 0.4s;
             background-color: rgb(235, 233, 233);
         }
-        h4 {
-            font-weight: lighter;
+        button:hover {
+            opacity: 0.85;
+            cursor: pointer;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         }
-        .modal {
-            display: none;
-            position: fixed; 
-            z-index: 1;
-            padding-top: 25px;
-            left: 0; 
-            top: 0;
-            width: 100%;
-            height: 100%; 
-            background-color: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0, 0.5);
-            animation-name: fadeIn;
-            animation-duration: 1s;
-        }
-            .modal-shape {
-                position: relative; 
+            h4 {
+                font-weight: lighter;
+            }
+            .modal {
+                display: none;
+                position: fixed; 
+                z-index: 1;
+                padding-top: 25px;
+                left: 0; 
+                top: 0;
+                width: 100%;
+                height: 100%; 
+                background-color: rgb(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.5);
+                animation-name: fadeIn;
+                animation-duration: 1s;
+            }
+                .modal-shape {
+                    position: relative; 
+                    margin: auto;
+                    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                    background-size: 400% 400%;
+                    animation: gradient 16s ease infinite;
+                    width: 75%;
+                    border-radius: 24px;
+                }
+            .modal-header {
+                color: white;
+                padding: 20px; 
                 margin: auto;
-                background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-                background-size: 400% 400%;
-                animation: gradient 16s ease infinite;
-                width: 75%;
-                border-radius: 24px;
+                font-size: larger;
+                }
+            .modal-content {
+                position: relative; 
+                color: white;
+                padding: 20px; 
+                margin: auto; 
+                }
+            div button {
+                width: 45%;
+                display: inline-block;
+                margin: 10px;
             }
-          .modal-header {
-              color: white;
-              padding: 20px; 
-              margin: auto;
-              font-size: larger;
+            .modal-footer {
+                display: none;
+                position: relative;
+                color: white;
+                padding: 20px; 
+                margin: auto; 
+                font-size: larger;
             }
-          .modal-content {
-              position: relative; 
-              color: white;
-              padding: 20px; 
-              margin: auto; 
-            }
-          div button {
-              width: 45%;
-              display: inline-block;
-              margin: 10px;
-          }
-          .modal-footer {
-              display: none;
-              position: relative;
-              color: white;
-              padding: 20px; 
-              margin: auto; 
-              font-size: larger;
-          }
-          .close-btn {
-              float: right; 
-              margin: 2% 3%;
-              color: lightgray; 
-              font-size: 24px;  
-              font-weight: bold;
-            }
-            .close-btn:hover {
-              color: darkgray;
-              cursor: pointer;
-            }
+            .close-btn {
+                float: right; 
+                margin: 2% 3%;
+                color: lightgray; 
+                font-size: 24px;  
+                font-weight: bold;
+                }
+                .close-btn:hover {
+                color: darkgray;
+                cursor: pointer;
+                }
 
 section.final {
     grid-row: 3;
     grid-column: 1 / span 5;
     display: block;
 }
-section button {
-    cursor: pointer;
-    width: 45%;
-    height: 100px;
-    border-radius: 24px;
-    margin: 10px auto;
-    transition-duration: 0.4s;
-    background-color: rgb(235, 233, 233);
-    font-weight: lighter;
-    font-size: larger;
-    font-family: 'Raleway', sans-serif;
-}
-section div button {
-    width: 45%;
-    display: inline-block;
-    margin: 10px;
-}
+    section button {
+        cursor: pointer;
+        width: 45%;
+        height: 100px;
+        border-radius: 24px;
+        margin: 10px auto;
+        transition-duration: 0.4s;
+        background-color: rgb(235, 233, 233);
+        font-weight: lighter;
+        font-size: larger;
+        font-family: 'Raleway', sans-serif;
+    }
+    section div button {
+        width: 45%;
+        display: inline-block;
+        margin: 10px;
+    }
 
 #score {
     display: block;
@@ -227,15 +233,16 @@ footer {
             color: darkgray;
             cursor: pointer;
           }
+        .about img {
+            width: 40%;
+            margin: 10px;
+        }
 
-  @keyframes fadeIn {
+@keyframes fadeIn {
     from {opacity: 0}
     to {opacity: 1}
-  }
-  .about img {
-      width: 40%;
-      margin: 10px;
-  }
+}
+
 .win {
     background-color: #2F8CAB;
     color: white;
@@ -247,11 +254,7 @@ footer {
     cursor: not-allowed;
 }
 
-button:hover {
-    opacity: 0.85;
-    cursor: pointer;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
+
 .game_over {
     background: linear-gradient(-45deg, black, purple, black);
 	background-size: 400% 400%;
