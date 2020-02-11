@@ -11,7 +11,7 @@ const btns = document.querySelectorAll(".openmodal");
 const modal = document.querySelectorAll(".modal");
 const spans = document.getElementsByClassName("close-btn");
 const answer = document.querySelectorAll(".modal-footer");
-const question = document.querySelectorAll(".modal-header")
+const question = document.querySelectorAll(".modal-header");
 
 for (let i = 0; i < btns.length; i++) {
     btns[i].onclick = function() {
@@ -189,7 +189,7 @@ window.onclick = function(event) {
 
 const nightMode = document.querySelector(".nMode");
 nightMode.onclick = function() {
-    body.classList.toggle('night-mode');
+    body.classList.toggle('night-mode');    
     if (nightMode.innerHTML === "Night Mode") {
         nightMode.innerHTML = "Day Mode";
         nightMode.classList.remove('nMode');
@@ -198,6 +198,5 @@ nightMode.onclick = function() {
         nightMode.innerHTML = "Night Mode";
         nightMode.classList.remove('dMode');
         nightMode.classList.add('nMode');
-
       }
 }
