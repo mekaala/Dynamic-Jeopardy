@@ -186,3 +186,18 @@ window.onclick = function(event) {
     about.style.display = "none";
   }
 }
+
+const nightMode = document.querySelector(".nMode");
+nightMode.onclick = function() {
+    body.classList.toggle('night-mode');
+    if (nightMode.innerHTML === "Night Mode") {
+        nightMode.innerHTML = "Day Mode";
+        nightMode.classList.remove('nMode');
+        nightMode.classList.add('dMode');
+      } else {
+        nightMode.innerHTML = "Night Mode";
+        nightMode.classList.remove('dMode');
+        nightMode.classList.add('nMode');
+
+      }
+}
