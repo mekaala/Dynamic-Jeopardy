@@ -388,7 +388,7 @@ footer {
   @media only screen and (max-width: 760px) {
     body {
     display: grid;
-    grid-template-rows: 70px 1fr 150px 50px;
+    grid-template-rows: 70px 1fr 200px 50px;
     grid-template-columns: 20% 20% 20% 20% 20%;
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -436,6 +436,7 @@ footer {
         width: 45%;
         display: inline-block;
         margin: 5px;
+        height: 50px;
     }
     #score {
         margin: 8px auto;
