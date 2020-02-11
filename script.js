@@ -25,11 +25,13 @@ for (let i = 0; i < spans.length; i++) {
        Array.from(document.querySelectorAll(".modal-footer"), e => e.style.display = "none");
     }
  }
- window.onclick = function(event) {
-    if (event.target == modal[i]) {
+ for (let i = 0; i < modal.length; i++) {
+ window.onclick = function(evt) {
+    if (evt.target == modal[i]) {
       modal[i].style.display = "none";
     }
   }
+}
 
 // Choose an answer
 // Clicking button will replace choices with answer
