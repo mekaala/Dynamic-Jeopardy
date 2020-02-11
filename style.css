@@ -4,7 +4,7 @@ body {
     animation: gradient 15s ease infinite;    
     color: white;
     display: grid;
-    grid-template-rows: 150px 1fr 200px 50px;
+    grid-template-rows: 100px 1fr 200px 50px;
     grid-template-columns: 20% 20% 20% 20% 20%;
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -191,7 +191,7 @@ footer {
     }
     footer nav {
         float: right;
-        margin: auto;
+        margin-top: 13px;
     }
         #aboutMe:hover {
             cursor: pointer;
