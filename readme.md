@@ -14,6 +14,7 @@ I want to develop and design a game that I can enjoy developing in order to be 1
 **How to play Jeopardy**
 
 Players have to answer questions from different themes. There are five themes, each containing five questions that range from easy to difficult. Easy prompts have low points, and difficult prompts have high points.
+Rather than asking players to type in their response, the prompt will now have a Multiple Choice layout.
 
 **What should I develop first?**
 
@@ -23,24 +24,26 @@ A "Final Question".
 
 **HTML**
 
-Elements:
-Button: each card is a button that opens the question. The player should type in the answer in order to receive points.
+My main HTML contains 27 buttons: five in each category *class* with an id of their value. This allows for specific organization of button layout. There is also a final question worth 1000 points.
+The modal HTML contains a prompt, a multiple choice section, and an answer. Depending on which choice they make, they will receive points for the question.
 
 
 **JAVASCRIPT**
 
 For each button, there is a different prompt. We must make conditionals that evaluate if the player has input the correct answer for the chosen question.
 The questions are multiple choice:
-If their answer is correct: the player receives points based on the value of the question.
-Else: the player is returned to the home screen, and no points have been added.
+Upon choosing their answer, the buttons are replaced with the true answer. The original point value button will be disabled to prevent further interaction.
+Total interaction with all buttons is disabled when the player proceeds with Submitting the score.
+The player receives points when choosing the button with the "correct" class.
 Numerical Values must be added together to create a score for the player.
 
 
-**EXTRA: What else can be added to the game (IF I have more time)?**
+**Evaluation of Game**
 
-A "grade". Compare the total points earned with the total points they could have earned SO FAR.
-I can make a second board that is only accessible to those who have earned at least half of all points available.
-I can add a Multiple Choice Prompt to make the game a little easier.
+The game will keep track of the total amount of points earned. When finishing the game, users will submit their score. The game compares the total number of points earned to three thresholds:
+If the total score is less than 2000, then the player will lose.
+If the total score is greater than 2000 but less than 7000, the player will win, and be lauded for their efforts.
+If the total score is greater than 7000, then the player will achieve the best possible victory.
 
 
 **User Stories**
@@ -54,9 +57,6 @@ https://trello.com/b/fc0ajCZ8
 
 
 **HTML**
-My HTML currently contains 25 buttons: five in each category *class* with an id of their value. This allows for specific organization of button layout.
 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bdfcb766-a0b7-4762-9ee9-5fec38fd308f/deploy-status)](https://app.netlify.com/sites/nintendo-jeopardy/deploys)
-
-I should make the other buttons modal boxes too!
