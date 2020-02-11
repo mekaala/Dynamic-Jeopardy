@@ -343,6 +343,7 @@ footer {
         .about img {
             width: 40%;
             margin: 10px;
+            border-radius: 48px;
         }
 
 @keyframes fadeIn {
