@@ -349,7 +349,7 @@ footer {
   @media only screen and (max-width: 760px) {
     body {
     display: grid;
-    grid-template-rows: 70px 1fr 200px 50px;
+    grid-template-rows: 70px 1fr 140px 50px;
     grid-template-columns: 20% 20% 20% 20% 20%;
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -387,7 +387,7 @@ footer {
         display: inline-block;
     }
     section button {
-        width: 100%;
+        width: 48%;
         height: 60px;
         margin: 4px auto;
         border-radius: 24px;
@@ -412,5 +412,8 @@ footer {
     }
     .about-shape {
         margin: 20% auto;
+    }
+    .close-btn{ 
+        margin: 1% 4%;
     }
 }
