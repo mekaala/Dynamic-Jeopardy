@@ -141,6 +141,34 @@ function add1000() {
     scoreTotal += score1000;
 }
 
+const shapeThing = document.querySelector(".modal-shapeThing");
+const s = document.getElementById("thing");
+const scoreHead = document.querySelector(".modal-score");
+const scoreStuff = document.querySelector(".modal-card");
+const scoreCard = document.querySelector(".scoreCard");
+scoreCard.onclick = function() {
+    const card = document.createTextNode(scoreTotal);
+    scoreStuff.style.display = "block";
+    scoreHead.style.display = "block";
+    s.appendChild(card);
+}
+
+const closeSome = document.getElementsByClassName("close-some")[0];
+closeSome.onclick = function() {
+    scoreStuff.style.display = "none";
+    const card = document.createTextNode(scoreTotal);
+    s.textContent = "Total score: ";
+  }
+  window.onclick = function(event) {
+    if (event.target == scoreStuff) {
+      scoreStuff.style.display = "none";
+      const card = document.createTextNode(scoreTotal);
+      s.textContent = "Total score: ";
+    }
+  }
+
+
+
 const scoreBoard = document.querySelector("#score");
 const body = document.querySelector('body');
 scoreBoard.addEventListener('click',finalScore);
