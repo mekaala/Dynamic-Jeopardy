@@ -85,6 +85,7 @@ main h3 {
         }
             h4 {
                 font-weight: lighter;
+                margin: auto;
             }
             .modal {
                 display: none;
@@ -135,10 +136,11 @@ main h3 {
                 font-size: larger;
             }
             .close-btn {
-                float: right; 
-                margin: 2% 3%;
-                color: lightgray; 
-                font-size: 24px;  
+                float: right;
+                text-align: right;
+                margin: 0% 2%;
+                color: lightgray;
+                font-size: 24px;
                 font-weight: bold;
                 }
                 .close-btn:hover {
