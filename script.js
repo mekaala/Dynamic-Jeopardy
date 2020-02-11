@@ -27,7 +27,7 @@ for (let i = 0; i < spans.length; i++) {
  }
  for (let i = 0; i < modal.length; i++) {
  window.onclick = function(evt) {
-    if (evt.target == modal[i]) {
+    if (event.target == modal[i]) {
       modal[i].style.display = "none";
     }
   }
@@ -38,22 +38,48 @@ for (let i = 0; i < spans.length; i++) {
 // Button will be disabled
 
 const multButton = document.querySelectorAll(".modal-content");
-for (let i = 0; i < multButton.length; i++) {
-    multButton[i].onclick = function() {
+const whatAnswer = document.querySelectorAll(".what");
+for (let i = 0; i < whatAnswer.length; i++) {
+    whatAnswer[i].onclick = function() {
         answer[i].style.display = "block";
         multButton[i].style.display = "none";
         btns[i].disabled = true;
+        btns[i].classList.add('lose')
     }
-} 
+}
 
+const noAnswer = document.querySelectorAll(".no");
+for (let i = 0; i < noAnswer.length; i++) {
+    noAnswer[i].onclick = function() {
+        answer[i].style.display = "block";
+        multButton[i].style.display = "none";
+        btns[i].disabled = true;
+        btns[i].classList.add('lose')
+    }
+}
 
-// Updated content so that choosing the correct answer will turn the point button blue.
+const wayAnswer = document.querySelectorAll(".way");
+for (let i = 0; i < wayAnswer.length; i++) {
+    wayAnswer[i].onclick = function() {
+        answer[i].style.display = "block";
+        multButton[i].style.display = "none";
+        btns[i].disabled = true;
+        btns[i].classList.add('lose')
+    }
+}
 const correctAnswer = document.querySelectorAll(".correct");
 for (let i = 0; i < correctAnswer.length; i++) {
     correctAnswer[i].onclick = function() {
+        answer[i].style.display = "block";
+        multButton[i].style.display = "none";
+        btns[i].disabled = true;
         btns[i].classList.add('win');
     }
 }
+
+
+// Updated content so that choosing the correct answer will turn the point button blue.
+
 
 // Defined variables for the correct multiple choice answer
 // (depending on the value of the question),
