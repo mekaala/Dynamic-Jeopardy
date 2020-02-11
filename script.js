@@ -105,69 +105,58 @@ for (let i = 0; i < correctAnswer.length; i++) {
 // (depending on the value of the question),
 // such that awards the correct amount of points to player
 // by adding new points to the total they have collected so far.
+// Update the score card with the new points.
+
+const s = document.getElementById("thing");
+const scoreCard = document.querySelector(".scoreCard");
+
 const p100 = document.querySelectorAll("#one")
 for (let i = 0; i < p100.length; i++) {
 p100[i].addEventListener('click',add100);
 function add100() {
     scoreTotal += score100;
+    s.textContent = scoreTotal + " Points";
+
 }}
 const p200 = document.querySelectorAll("#two")
 for (let i = 0; i < p200.length; i++) {
 p200[i].addEventListener('click',add200);
 function add200() {
     scoreTotal += score200;
+    s.textContent = scoreTotal + " Points";
+
 }}
 const p300 = document.querySelectorAll("#three")
 for (let i = 0; i < p300.length; i++) {
 p300[i].addEventListener('click',add300);
 function add300() {
     scoreTotal += score300;
+    s.textContent = scoreTotal + " Points";
+
 }}
 const p400 = document.querySelectorAll("#four")
 for (let i = 0; i < p400.length; i++) {
 p400[i].addEventListener('click',add400);
 function add400() {
     scoreTotal += score400;
+    s.textContent = scoreTotal + " Points";
+
 }}
 const p500 = document.querySelectorAll("#five")
 for (let i = 0; i < p500.length; i++) {
 p500[i].addEventListener('click',add500);
 function add500() {
     scoreTotal += score500;
+    s.textContent = scoreTotal + " Points";
+
 }}
 const p1000 = document.querySelector("#ten")
 p1000.addEventListener('click',add1000);
 function add1000() {
     scoreTotal += score1000;
+    s.textContent = scoreTotal + " Points";
+
 }
-
-const shapeThing = document.querySelector(".modal-shapeThing");
-const s = document.getElementById("thing");
-const scoreHead = document.querySelector(".modal-score");
-const scoreStuff = document.querySelector(".modal-card");
-const scoreCard = document.querySelector(".scoreCard");
-scoreCard.onclick = function() {
-    const card = document.createTextNode(scoreTotal);
-    scoreStuff.style.display = "block";
-    scoreHead.style.display = "block";
-    s.appendChild(card);
-}
-
-const closeSome = document.getElementsByClassName("close-some")[0];
-closeSome.onclick = function() {
-    scoreStuff.style.display = "none";
-    const card = document.createTextNode(scoreTotal);
-    s.textContent = "Total score: ";
-  }
-  window.onclick = function(e) {
-    if (e.target == scoreStuff) {
-      scoreStuff.style.display = "none";
-      const card = document.createTextNode(scoreTotal);
-      s.textContent = "Total score: ";
-    }
-  }
-
-
 
 const scoreBoard = document.querySelector("#score");
 const body = document.querySelector('body');
