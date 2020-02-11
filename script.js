@@ -114,12 +114,12 @@ function finalScore() {
             h.appendChild(document.createTextNode(scoreTotal));
         } else if (scoreTotal < 7000) {
             niceWork.play();
-            body.classList.add('great')
+            body.classList.add('good')
             nice.style.display = "block";
             l.appendChild(document.createTextNode(scoreTotal));
         } else if (7000 <= scoreTotal) {
             incredible.play();
-            body.classList.add('incredible')
+            body.classList.add('big')
             perfect.style.display = "block";
             m.appendChild(document.createTextNode(scoreTotal));
         }

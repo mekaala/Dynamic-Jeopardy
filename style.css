@@ -105,21 +105,18 @@ main h3 {
             }
           .modal-header {
               color: white;
-              border-radius: 24px 24px 0 0;
               padding: 20px; 
-              margin: auto; 
-              width: 75%;  
+              margin: auto;
+              font-size: larger;
             }
           .modal-content {
               position: relative; 
               color: white;
-              border-radius: 0 0 24px 24px;
               padding: 20px; 
               margin: auto; 
-              width: 75%;  
             }
           div button {
-              width: 40%;
+              width: 45%;
               display: inline-block;
               margin: 10px;
           }
@@ -127,10 +124,9 @@ main h3 {
               display: none;
               position: relative;
               color: white;
-              border-radius: 0 0 24px 24px;
               padding: 20px; 
               margin: auto; 
-              width: 75%;  
+              font-size: larger;
           }
           .close-btn {
               float: right; 
@@ -151,7 +147,7 @@ section.final {
 }
 section button {
     cursor: pointer;
-    width: 100%;
+    width: 45%;
     height: 100px;
     border-radius: 24px;
     margin: 10px auto;
@@ -160,6 +156,11 @@ section button {
     font-weight: lighter;
     font-size: larger;
     font-family: 'Raleway', sans-serif;
+}
+section div button {
+    width: 45%;
+    display: inline-block;
+    margin: 10px;
 }
 
 #score {
@@ -201,12 +202,20 @@ footer {
             animation-name: fadeIn;
             animation-duration: 1s;
         }
-        
-        .about-content {
+        .about-shape {
             position: relative;
-            margin: 30% 0%;
+            margin: 10%;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 16s ease infinite;
+            width: 75%;
             border-radius: 24px;
-            padding: 15px 15px 200px 15px;
+        }
+        .about-content {
+            position: relative; 
+            color: white;
+            padding: 20px; 
+            margin: auto; 
         }
         .close {
             float: right; 
@@ -256,22 +265,20 @@ button:hover {
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;  
     }
-.great {
+.good {
     background: linear-gradient(-45deg, cyan, magenta, yellow);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;  
 }
-
-    .great .modal-shape {
+    .good .modal-shape {
         background: linear-gradient(-45deg, cyan, magenta, yellow);
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
     }
-.incredible {
+.big {
     background: linear-gradient(-45deg, red, green, blue);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    color: black;
 }
     .incredible .modal-shape {
         background: linear-gradient(-45deg, red, green, blue);
@@ -305,14 +312,6 @@ button:hover {
             float: right;
             font-size: 85%;    
         }
-            a:hover {
-                color: #2F8CAB;
-            }
-            a {
-                text-decoration: none;
-                color: rgb(100, 100, 100);
-                font-weight: lighter;
-            }
     main h3 {
         font-size: 10px;
         height: 30px;
