@@ -7,6 +7,22 @@ let score500 = 500;
 let score1000 = 1000;
 let scoreTotal = 0;
 
+
+
+const nightMode = document.querySelector(".nMode");
+nightMode.onclick = function() {
+    body.classList.toggle('night-mode');    
+    if (nightMode.innerHTML === "Night Mode") {
+        nightMode.innerHTML = "Day Mode";
+        nightMode.classList.remove('nMode');
+        nightMode.classList.add('dMode');
+      } else {
+        nightMode.innerHTML = "Night Mode";
+        nightMode.classList.remove('dMode');
+        nightMode.classList.add('nMode');
+      }
+}
+
 const btns = document.querySelectorAll(".openmodal");
 const modal = document.querySelectorAll(".modal");
 const spans = document.getElementsByClassName("close-btn");
@@ -44,6 +60,7 @@ for (let i = 0; i < whatAnswer.length; i++) {
         answer[i].style.display = "block";
         multButton[i].style.display = "none";
         btns[i].disabled = true;
+        btns[i].classList.remove('nMode')
         btns[i].classList.add('lose')
     }
 }
@@ -54,6 +71,7 @@ for (let i = 0; i < noAnswer.length; i++) {
         answer[i].style.display = "block";
         multButton[i].style.display = "none";
         btns[i].disabled = true;
+        btns[i].classList.remove('nMode')
         btns[i].classList.add('lose')
     }
 }
@@ -64,6 +82,7 @@ for (let i = 0; i < wayAnswer.length; i++) {
         answer[i].style.display = "block";
         multButton[i].style.display = "none";
         btns[i].disabled = true;
+        btns[i].classList.remove('nMode')
         btns[i].classList.add('lose')
     }
 }
@@ -73,6 +92,7 @@ for (let i = 0; i < correctAnswer.length; i++) {
         answer[i].style.display = "block";
         multButton[i].style.display = "none";
         btns[i].disabled = true;
+        btns[i].classList.remove('nMode')
         btns[i].classList.add('win');
     }
 }
@@ -187,16 +207,3 @@ window.onclick = function(event) {
   }
 }
 
-const nightMode = document.querySelector(".nMode");
-nightMode.onclick = function() {
-    body.classList.toggle('night-mode');    
-    if (nightMode.innerHTML === "Night Mode") {
-        nightMode.innerHTML = "Day Mode";
-        nightMode.classList.remove('nMode');
-        nightMode.classList.add('dMode');
-      } else {
-        nightMode.innerHTML = "Night Mode";
-        nightMode.classList.remove('dMode');
-        nightMode.classList.add('nMode');
-      }
-}

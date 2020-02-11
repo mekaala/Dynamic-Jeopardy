@@ -15,6 +15,71 @@ body {
 	50% {background-position: 100% 50%;}
 	100% {background-position: 0% 50%;}
 }
+.nMode {
+    float: left;
+    width: 76px;
+    height: 50px;
+    background: linear-gradient(-45deg, black, rgb(39, 0, 39), rgb(0, 0, 126));
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;       
+    color: white;
+    border-radius: 12px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+}
+.dMode {
+    float: left;
+    width: 76px;
+    height: 50px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;       
+    color: white;
+    border-radius: 12px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.win {
+    background-color: rgb(33, 152, 192);
+    color: white;
+    cursor: not-allowed;
+}
+.lose {
+    background-color: rgb(214, 72, 16);
+    color: white;
+    cursor: not-allowed;
+}
+
+
+.night-mode {
+    background: linear-gradient(-45deg, black, rgb(39, 0, 39), rgb(0, 0, 126));
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;    
+    color: white;
+}
+.night-mode button, .night-mode #score {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+.night-mode button.win {
+    background-color: rgb(8, 0, 116);
+    color: white;
+}
+
+.night-mode button.lose {
+    background-color: rgb(116, 0, 0);
+    color: white;
+}
+
+.night-mode div.modal-shape {
+    background: linear-gradient(-45deg, black, rgb(39, 0, 39), rgb(0, 0, 126));
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;    
+    color: white;
+}
 header {
     grid-row: 1;
     grid-column: 1 / span 5;
@@ -244,17 +309,6 @@ footer {
     to {opacity: 1}
 }
 
-.win {
-    background-color: #2F8CAB;
-    color: white;
-    cursor: not-allowed;
-}
-.lose {
-    background-color: rgb(218, 96, 49);
-    color: white;
-    cursor: not-allowed;
-}
-
 
 .game_over {
     background: linear-gradient(-45deg, black, purple, black);
@@ -356,48 +410,4 @@ footer {
     .about-shape {
         margin: 20% auto;
     }
-}
-button.nMode {
-    float: left;
-    width: 76px;
-    height: 50px;
-    background: linear-gradient(-45deg, black, rgb(39, 0, 39), rgb(0, 0, 126));
-	background-size: 400% 400%;
-    animation: gradient 15s ease infinite;       
-    color: white;
-    border-radius: 12px;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    font-weight: lighter;
-}
-.dMode {
-    float: left;
-    width: 76px;
-    height: 50px;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-    animation: gradient 15s ease infinite;       
-    color: white;
-    border-radius: 12px;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    font-weight: lighter;
-}
-
-.night-mode {
-    background: linear-gradient(-45deg, black, rgb(39, 0, 39), rgb(0, 0, 126));
-	background-size: 400% 400%;
-    animation: gradient 15s ease infinite;    
-    color: white;
-}
-.night-mode button, .night-mode #score {
-    background-color: rgb(20, 20, 20);
-    color: white;
-}
-
-.night-mode div.modal-shape {
-    background: linear-gradient(-45deg, black, rgb(39, 0, 39), rgb(0, 0, 126));
-	background-size: 400% 400%;
-    animation: gradient 15s ease infinite;    
-    color: white;
 }
