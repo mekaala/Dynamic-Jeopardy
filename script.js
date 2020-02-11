@@ -28,6 +28,7 @@ const modal = document.querySelectorAll(".modal");
 const spans = document.getElementsByClassName("close-btn");
 const answer = document.querySelectorAll(".modal-footer");
 const question = document.querySelectorAll(".modal-header");
+const modalShape = document.querySelectorAll(".modal-shape")
 
 for (let i = 0; i < btns.length; i++) {
     btns[i].onclick = function() {
@@ -41,13 +42,12 @@ for (let i = 0; i < spans.length; i++) {
        Array.from(document.querySelectorAll(".modal-footer"), e => e.style.display = "none");
     }
  }
- for (let i = 0; i < modal.length; i++) {
  window.onclick = function(evt) {
-    if (event.target == modal[i]) {
+    if (evt.target == modal) {
       modal[i].style.display = "none";
     }
   }
-}
+
 
 // Choose an answer
 // Clicking button will replace choices with answer
@@ -159,8 +159,8 @@ closeSome.onclick = function() {
     const card = document.createTextNode(scoreTotal);
     s.textContent = "Total score: ";
   }
-  window.onclick = function(event) {
-    if (event.target == scoreStuff) {
+  window.onclick = function(e) {
+    if (e.target == scoreStuff) {
       scoreStuff.style.display = "none";
       const card = document.createTextNode(scoreTotal);
       s.textContent = "Total score: ";
