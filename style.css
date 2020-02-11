@@ -176,7 +176,7 @@ main h3 {
                 }
             .modal-header {
                 color: white;
-                padding: 20px; 
+                padding: 28px;
                 margin: auto;
                 font-size: larger;
                 }
@@ -204,7 +204,7 @@ main h3 {
                 text-align: right;
                 margin: 0% 2%;
                 color: lightgray;
-                font-size: 24px;
+                font-size: 32px;
                 font-weight: bold;
                 }
                 .close-btn:hover {
@@ -293,8 +293,10 @@ footer {
         .close {
             float: right; 
             color: lightgray; 
-            font-size: 24px;  
+            font-size: 32px;  
             font-weight: bold;
+            margin: -18px -10px;
+
           }
           .close:hover {
             color: darkgray;
